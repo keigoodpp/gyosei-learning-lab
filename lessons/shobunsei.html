@@ -33,12 +33,12 @@
       <div class="section-label">初心者向け説明</div>
       <div class="card">
         <p>行政（国や自治体）が何かをしても、何でも裁判で争えるわけではありません。取消訴訟という行政訴訟を使うには、まず「訴えの対象が処分かどうか」を確認する必要があります。これが<strong>処分性</strong>の問題です。</p>
-        <p style="margin-top:12px">最高裁判所は次のように定義しています。</p>
+        <p>最高裁判所は次のように定義しています。</p>
         <div class="definition">
           「公権力の主体たる国または公共団体が行う行為のうち、その行為によって、<strong>直接国民の権利義務を形成し</strong>またはその範囲を確定することが<strong>法律上認められているもの</strong>」
           <div class="source">最高裁昭和39年10月29日判決（東京ごみ焼却場事件）</div>
         </div>
-        <p style="margin-top:4px">要するに、「公権力が、直接・法律に基づいて、国民の権利義務を変える行為」だけが処分です。</p>
+        <p>要するに、「公権力が、直接・法律に基づいて、国民の権利義務を変える行為」だけが処分です。</p>
       </div>
     </div>
 
@@ -52,11 +52,11 @@
             <li>建築確認（建築基準法に基づく確認）</li>
             <li>飲食店の営業許可・不許可</li>
             <li>税の賦課決定</li>
-            <li>土地区画整理事業計画の決定<br><small style="color:#888">※最高裁大法廷平成20年9月10日判決で判例変更</small></li>
-            <li>病院開設中止勧告<br><small style="color:#888">※事実上の強制力があるため処分性あり（最高裁平成17年7月15日判決）</small></li>
+            <li>土地区画整理事業計画の決定<br><small>※最高裁大法廷平成20年9月10日判決で判例変更</small></li>
+            <li>病院開設中止勧告<br><small>※事実上の強制力があるため処分性あり（最高裁平成17年7月15日判決）</small></li>
           </ul>
         </div>
-        <div class="example-group" style="margin-bottom:0">
+        <div class="example-group">
           <div class="eg-title no">処分性なし（取消訴訟×）</div>
           <ul class="eg-list no">
             <li>行政指導（従うかどうかは任意）</li>
@@ -104,8 +104,8 @@
         <div class="quiz-num">問1</div>
         <div class="quiz-q">行政指導は、原則として取消訴訟の対象となる「処分」に該当するか？</div>
         <div class="quiz-choices">
-          <button class="quiz-choice" onclick="answer('q1',0)">① 該当する（処分性あり）</button>
-          <button class="quiz-choice" onclick="answer('q1',1)">② 該当しない（処分性なし）</button>
+          <button class="quiz-choice" onclick="answer('q1',0)">① 該当しない（処分性なし）</button>
+          <button class="quiz-choice" onclick="answer('q1',1)">② 該当する（処分性あり）</button>
         </div>
         <div class="quiz-feedback" id="q1-fb"></div>
       </div>
@@ -125,8 +125,8 @@
         <div class="quiz-q">病院開設中止勧告について、最高裁平成17年7月15日判決が処分性を認めた主な理由はどれか？</div>
         <div class="quiz-choices">
           <button class="quiz-choice" onclick="answer('q3',0)">① 勧告に従わないと刑事罰がある</button>
-          <button class="quiz-choice" onclick="answer('q3',1)">② 従わないと保険医療機関の指定を受けられず事実上の強制力がある</button>
-          <button class="quiz-choice" onclick="answer('q3',2)">③ 勧告は法律上の義務を直接課すものだから</button>
+          <button class="quiz-choice" onclick="answer('q3',1)">② 勧告は法律上の義務を直接課すものだから</button>
+          <button class="quiz-choice" onclick="answer('q3',2)">③ 従わないと保険医療機関の指定を受けられず事実上の強制力がある</button>
         </div>
         <div class="quiz-feedback" id="q3-fb"></div>
       </div>
@@ -138,16 +138,16 @@
   <script>
     const answers = {
       q1: {
-        correct: 1,
+        correct: 0,
         explanation: '行政指導は従うかどうかが任意であり、直接国民の権利義務を形成しないため、原則として処分性はありません。'
       },
       q2: {
         correct: 1,
-        explanation: '最高裁大法廷平成20年9月10日判決は従来の判例を変更し、土地区画整理事業計画の決定に処分性を認めました。計画決定により施行地区内の土地所有者等の権利行使が制限されることが根拠です。'
+        explanation: '最高裁大法廷平成20年9月10日判決で判例変更。施行地区内の権利者が計画決定時から権利行使を制限されることが根拠です。'
       },
       q3: {
-        correct: 1,
-        explanation: '最高裁平成17年7月15日判決は、勧告に従わない場合に保険医療機関の指定申請が事実上不可能になるという「事実上の強制力」を重視して処分性を認めました。'
+        correct: 2,
+        explanation: '最高裁平成17年7月15日判決は、勧告に従わないと保険医療機関の指定を受けられないという「事実上の強制力」を重視して処分性を認めました。'
       }
     };
   </script>

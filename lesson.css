@@ -76,6 +76,16 @@ p { font-size: 0.92rem; line-height: 1.7; }
 }
 .conclusion p { font-size: 0.95rem; line-height: 1.7; }
 
+/* Card paragraph spacing — eliminates inline style="margin-top:*" */
+.card p + p       { margin-top: 12px; }
+.definition + p   { margin-top: 4px; }
+
+/* Example note text — eliminates inline style="color:#888" on <small> */
+.eg-list small { color: #888; }
+
+/* Last example group needs no bottom margin */
+.example-group:last-child { margin-bottom: 0; }
+
 /* ===== Definition quote ===== */
 .definition {
   background: #f8f9ff;
