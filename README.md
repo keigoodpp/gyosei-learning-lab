@@ -24,7 +24,8 @@
 │   └── shusso-kikan.html       # 行政法：出訴期間とは何か
 ├── docs/
 │   ├── content-guideline.md   # 法令・判例教材の書き方ルール
-│   └── source-log.md          # 教材に記載した判例・条文の一次資料確認ログ
+│   ├── source-log.md          # 教材に記載した判例・条文の一次資料確認ログ
+│   └── human-check-tasks.md  # 人間確認タスク用チェックリスト（条文・判例の一次資料照合）
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml          # GitHub Pages 自動デプロイ
