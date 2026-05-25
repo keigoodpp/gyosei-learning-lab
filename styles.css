@@ -32,13 +32,14 @@ header p { font-size: 0.85rem; color: #666; }
   display: block;
   background: #fff;
   border-radius: 12px;
-  padding: 18px 20px;
+  padding: 18px 44px 18px 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   text-decoration: none;
   color: inherit;
   margin-bottom: 10px;
   border-left: 4px solid #4a90e2;
   transition: box-shadow 0.15s;
+  position: relative;
 }
 .lesson-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
 .lesson-card .tag {
@@ -50,10 +51,33 @@ header p { font-size: 0.85rem; color: #666; }
 .lesson-card .title { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
 .lesson-card .desc { font-size: 0.82rem; color: #666; line-height: 1.5; }
 .lesson-card .arrow {
-  float: right;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   color: #bbb;
   font-size: 1.1rem;
-  margin-top: -28px;
+}
+
+/* ===== Step badge ===== */
+.lesson-card .step {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #4a90e2;
+  border: 1.5px solid #4a90e2;
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-bottom: 5px;
+  letter-spacing: 0.05em;
+}
+
+/* ===== Section description ===== */
+.section-desc {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 14px;
 }
 
 /* ===== Quiz card ===== */
