@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>原告適格とは何か｜行政書士学習ラボ</title>
+  <link rel="stylesheet" href="../lesson.css">
+</head>
+<body>
+  <nav class="topbar">
+    <a href="../index.html">ホーム</a>
+    <span class="sep">›</span>
+    <span class="current">原告適格とは何か</span>
+  </nav>
+
+  <div class="container">
+    <div class="lesson-header">
+      <span class="tag">行政法</span>
+      <h1>原告適格とは何か</h1>
+    </div>
+
+    <!-- 1. まず結論 -->
+    <div class="section">
+      <div class="section-label">まず結論</div>
+      <div class="conclusion">
+        <div class="label">POINT</div>
+        <p>取消訴訟を提起できるのは「<strong>法律上の利益を有する者</strong>」に限られる（行政事件訴訟法第9条第1項）。名宛人以外の第三者が原告になれるかが問われる場面で特に重要な概念。</p>
+      </div>
+    </div>
+
+    <!-- 2. 初心者向け説明 -->
+    <div class="section">
+      <div class="section-label">初心者向け説明</div>
+      <div class="card">
+        <p>行政の処分に不満があっても、誰でも裁判所に取消訴訟を起こせるわけではありません。行政事件訴訟法第9条第1項は、訴えを起こせる「原告」を「<strong>法律上の利益を有する者</strong>」に限定しています。</p>
+        <p>「法律上の利益」とは、根拠法令が不特定多数の公益としてではなく、<strong>個人の権利・利益として保護することを意図した利益</strong>のことです。これに対し、法律が公益を守った結果として個人が受けるだけの利益を「<strong>反射的利益</strong>」といい、これだけでは原告適格は認められません。</p>
+        <div class="definition">
+          「当該処分又は裁決の根拠となる法令の規定の文言のみによることなく、当該法令の趣旨及び目的並びに当該処分において考慮されるべき利益の内容及び性質を考慮するものとする」
+          <div class="source">行政事件訴訟法第9条第2項（平成16年改正で追加）</div>
+        </div>
+        <p>平成16年の改正で第9条第2項が追加されました。第三者の原告適格を判断するときは、①法令の趣旨・目的、②利益の内容・性質を考慮することが明文化されたのです。</p>
+      </div>
+    </div>
+
+    <!-- 3. 具体例 -->
+    <div class="section">
+      <div class="section-label">具体例</div>
+      <div class="card">
+        <div class="example-group">
+          <div class="eg-title yes">原告適格あり</div>
+          <ul class="eg-list yes">
+            <li>処分の名宛人本人（営業許可を取り消された事業者など）</li>
+            <li>原子炉施設から相当範囲内の住民<br><small>※最高裁平成4年9月22日判決（もんじゅ訴訟）</small></li>
+            <li>空港周辺で騒音被害を受ける住民<br><small>※最高裁平成元年2月17日判決（新潟空港事件）</small></li>
+          </ul>
+        </div>
+        <div class="example-group">
+          <div class="eg-title no">原告適格なし</div>
+          <ul class="eg-list no">
+            <li>一般消費者（公取委の不当表示処分取消—反射的利益に過ぎない）<br><small>※最高裁昭和53年3月14日判決（主婦連ジュース訴訟）</small></li>
+            <li>根拠法令が競業者を保護していない場合の競業者</li>
+            <li>処分の相手方でも被害者でもない一般市民（抽象的な公益の主張のみ）</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. 試験で問われるポイント -->
+    <div class="section">
+      <div class="section-label">試験で問われるポイント</div>
+      <div class="card">
+        <ul class="point-list">
+          <li>
+            「法律上の利益」＝根拠法令が個人として保護する利益（反射的利益は×）
+            <div class="case">処分の根拠法令が誰の何を守っているかを読み解くことが鍵</div>
+          </li>
+          <li>
+            平成16年改正で第9条第2項を追加
+            <div class="case">法令の趣旨・目的と利益の内容・性質の考慮を明文化</div>
+          </li>
+          <li>
+            主婦連ジュース訴訟で一般消費者の原告適格を否定
+            <div class="case">最高裁昭和53年3月14日判決（反射的利益に過ぎない）</div>
+          </li>
+          <li>
+            新潟空港事件で空港周辺住民の原告適格を認めた
+            <div class="case">最高裁平成元年2月17日判決</div>
+          </li>
+          <li>
+            もんじゅ訴訟で原発周辺住民の原告適格を認めた
+            <div class="case">最高裁平成4年9月22日判決</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 5. ミニクイズ -->
+    <div class="section">
+      <div class="section-label">ミニクイズ</div>
+
+      <div class="quiz-item" id="q1">
+        <div class="quiz-num">問1</div>
+        <div class="quiz-q">行政事件訴訟法第9条第1項において、取消訴訟を提起できる者はどれか？</div>
+        <div class="quiz-choices">
+          <button class="quiz-choice" onclick="answer('q1',0)">① 処分につき「法律上の利益を有する者」</button>
+          <button class="quiz-choice" onclick="answer('q1',1)">② 処分の名宛人のみ</button>
+          <button class="quiz-choice" onclick="answer('q1',2)">③ 処分により不利益を受けた者すべて</button>
+        </div>
+        <div class="quiz-feedback" id="q1-fb"></div>
+      </div>
+
+      <div class="quiz-item" id="q2">
+        <div class="quiz-num">問2</div>
+        <div class="quiz-q">「反射的利益」に関する説明として正しいものはどれか？</div>
+        <div class="quiz-choices">
+          <button class="quiz-choice" onclick="answer('q2',0)">① 法律が直接個人を保護しており、原告適格が認められる</button>
+          <button class="quiz-choice" onclick="answer('q2',1)">② 法律が公益を守った結果が間接的に個人に及ぶ利益であり、原告適格は認められない</button>
+          <button class="quiz-choice" onclick="answer('q2',2)">③ 平成16年改正で原告適格が明示的に認められた利益の一種</button>
+        </div>
+        <div class="quiz-feedback" id="q2-fb"></div>
+      </div>
+
+      <div class="quiz-item" id="q3">
+        <div class="quiz-num">問3</div>
+        <div class="quiz-q">主婦連ジュース訴訟（最高裁昭和53年3月14日判決）の結論はどれか？</div>
+        <div class="quiz-choices">
+          <button class="quiz-choice" onclick="answer('q3',0)">① 消費者団体は代表として一般消費者の利益を主張できるとして原告適格を認めた</button>
+          <button class="quiz-choice" onclick="answer('q3',1)">② 公正取引委員会の処分に直接の利益を持つとして原告適格を認めた</button>
+          <button class="quiz-choice" onclick="answer('q3',2)">③ 一般消費者の利益は反射的利益に過ぎないとして原告適格を否定した</button>
+        </div>
+        <div class="quiz-feedback" id="q3-fb"></div>
+      </div>
+    </div>
+
+    <a class="back-link" href="../index.html">← トップに戻る</a>
+  </div>
+
+  <script>
+    const answers = {
+      q1: {
+        correct: 0,
+        explanation: '行政事件訴訟法第9条第1項は「法律上の利益を有する者」のみが取消訴訟を提起できると規定しています。名宛人以外の第三者も要件を満たせば原告になれます。'
+      },
+      q2: {
+        correct: 1,
+        explanation: '反射的利益とは、法律が公益を守った結果として個人が受ける恩恵に過ぎず、法律が個人を直接保護しているわけではありません。原告適格は認められません。'
+      },
+      q3: {
+        correct: 2,
+        explanation: '最高裁昭和53年3月14日判決は、一般消費者の利益は不当景品類及び不当表示防止法が反射的に保護するに過ぎず「法律上の利益」には当たらないとして原告適格を否定しました。'
+      }
+    };
+  </script>
+  <script src="../lesson.js"></script>
+</body>
+</html>

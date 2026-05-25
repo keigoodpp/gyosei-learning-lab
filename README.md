@@ -18,7 +18,8 @@
 ├── lesson.css                  # 教材ページ共通スタイル
 ├── lesson.js                   # 教材ページ共通クイズエンジン
 ├── lessons/
-│   └── shobunsei.html          # 行政法：処分性とは何か
+│   ├── shobunsei.html          # 行政法：処分性とは何か
+│   └── genkoku-tekikaku.html   # 行政法：原告適格とは何か
 ├── docs/
 │   ├── content-guideline.md   # 法令・判例教材の書き方ルール
 │   └── source-log.md          # 教材に記載した判例・条文の一次資料確認ログ
