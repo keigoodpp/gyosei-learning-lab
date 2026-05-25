@@ -1,0 +1,125 @@
+/* ===== Reset ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ===== Base ===== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+  padding: 24px 16px 48px;
+}
+.container { max-width: 480px; margin: 0 auto; }
+
+/* ===== Header ===== */
+header { text-align: center; margin-bottom: 32px; }
+header h1 { font-size: 1.4rem; margin-bottom: 6px; }
+header p { font-size: 0.85rem; color: #666; }
+
+/* ===== Section ===== */
+.section { margin-bottom: 32px; }
+.section-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* ===== Lesson card ===== */
+.lesson-card {
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 10px;
+  border-left: 4px solid #4a90e2;
+  transition: box-shadow 0.15s;
+}
+.lesson-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+.lesson-card .tag {
+  font-size: 0.7rem;
+  color: #4a90e2;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.lesson-card .title { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+.lesson-card .desc { font-size: 0.82rem; color: #666; line-height: 1.5; }
+.lesson-card .arrow {
+  float: right;
+  color: #bbb;
+  font-size: 1.1rem;
+  margin-top: -28px;
+}
+
+/* ===== Quiz card ===== */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.progress { font-size: 0.8rem; color: #999; margin-bottom: 12px; }
+.question { font-size: 1rem; line-height: 1.6; margin-bottom: 20px; }
+.choices { display: flex; flex-direction: column; gap: 10px; }
+.choice {
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 0.92rem;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+.choice:hover { border-color: #4a90e2; }
+.choice.correct { border-color: #27ae60; background: #eafaf1; color: #1e8449; }
+.choice.wrong   { border-color: #e74c3c; background: #fdf2f2; color: #c0392b; }
+
+/* ===== Feedback ===== */
+.feedback {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  display: none;
+}
+.feedback.show { display: block; }
+.feedback.correct { background: #eafaf1; color: #1e8449; }
+.feedback.wrong   { background: #fdf2f2; color: #c0392b; }
+
+/* ===== Buttons ===== */
+.next-btn {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+}
+.next-btn.show { display: block; }
+
+/* ===== Result ===== */
+.result { text-align: center; display: none; }
+.result.show { display: block; }
+.score { font-size: 2rem; font-weight: bold; color: #4a90e2; margin: 12px 0; }
+.restart-btn {
+  padding: 12px 32px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 16px;
+}
