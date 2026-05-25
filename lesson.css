@@ -1,0 +1,177 @@
+/* ===== Reset ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ===== Base ===== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+  padding: 0 0 48px;
+}
+p { font-size: 0.92rem; line-height: 1.7; }
+
+/* ===== Top bar ===== */
+.topbar {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.topbar a { color: #4a90e2; text-decoration: none; font-size: 0.9rem; }
+.topbar .sep { color: #bbb; font-size: 0.85rem; }
+.topbar .current { font-size: 0.9rem; color: #555; }
+
+/* ===== Layout ===== */
+.container { max-width: 480px; margin: 0 auto; padding: 24px 16px 0; }
+
+/* ===== Lesson header ===== */
+.lesson-header { margin-bottom: 28px; }
+.lesson-header .tag {
+  display: inline-block;
+  background: #e8f0fe;
+  color: #4a90e2;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.lesson-header h1 { font-size: 1.4rem; line-height: 1.4; }
+
+/* ===== Section ===== */
+.section { margin-bottom: 24px; }
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #4a90e2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* ===== Card ===== */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+/* ===== Conclusion box ===== */
+.conclusion {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid #4a90e2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.conclusion .label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #4a90e2;
+  margin-bottom: 8px;
+}
+.conclusion p { font-size: 0.95rem; line-height: 1.7; }
+
+/* ===== Definition quote ===== */
+.definition {
+  background: #f8f9ff;
+  border: 1px solid #d0d9f0;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin: 12px 0;
+  color: #444;
+}
+.definition .source { font-size: 0.75rem; color: #888; margin-top: 6px; }
+
+/* ===== Example list ===== */
+.example-group { margin-bottom: 14px; }
+.example-group .eg-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.eg-title.yes { color: #27ae60; }
+.eg-title.no  { color: #e74c3c; }
+.eg-list { list-style: none; }
+.eg-list li {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  padding: 4px 0 4px 20px;
+  position: relative;
+}
+.eg-list li::before { position: absolute; left: 0; font-weight: 700; }
+.yes li::before { content: "○"; color: #27ae60; }
+.no  li::before { content: "×"; color: #e74c3c; }
+
+/* ===== Exam point list ===== */
+.point-list { list-style: none; }
+.point-list li {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  padding: 8px 0 8px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+}
+.point-list li:last-child { border-bottom: none; }
+.point-list li::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #4a90e2;
+  font-size: 0.7rem;
+  top: 10px;
+}
+.point-list .case { font-size: 0.75rem; color: #888; margin-top: 2px; }
+
+/* ===== Lesson quiz ===== */
+.quiz-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin-bottom: 12px;
+}
+.quiz-num { font-size: 0.75rem; color: #888; margin-bottom: 8px; }
+.quiz-q { font-size: 0.95rem; line-height: 1.6; margin-bottom: 14px; font-weight: 600; }
+.quiz-choices { display: flex; flex-direction: column; gap: 8px; }
+.quiz-choice {
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 0.88rem;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: border-color 0.15s;
+}
+.quiz-choice:hover  { border-color: #4a90e2; }
+.quiz-choice.correct { border-color: #27ae60; background: #eafaf1; color: #1e8449; }
+.quiz-choice.wrong   { border-color: #e74c3c; background: #fdf2f2; color: #c0392b; }
+.quiz-feedback {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  display: none;
+}
+.quiz-feedback.show    { display: block; }
+.quiz-feedback.correct { background: #eafaf1; color: #1e8449; }
+.quiz-feedback.wrong   { background: #fdf2f2; color: #c0392b; }
+
+/* ===== Back link ===== */
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 32px;
+  color: #4a90e2;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
