@@ -13,8 +13,10 @@
 ```
 /
 ├── index.html                  # トップページ（教材一覧 + 総合ミニクイズ）
-├── styles.css                  # 全ページ共通スタイル
+├── styles.css                  # トップページ専用スタイル
 ├── app.js                      # トップページ クイズロジック
+├── lesson.css                  # 教材ページ共通スタイル
+├── lesson.js                   # 教材ページ共通クイズエンジン
 ├── lessons/
 │   └── shobunsei.html          # 行政法：処分性とは何か
 ├── docs/

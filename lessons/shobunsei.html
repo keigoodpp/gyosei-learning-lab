@@ -4,188 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>処分性とは何か｜行政書士学習ラボ</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
-      background: #f0f2f5;
-      color: #333;
-      min-height: 100vh;
-      padding: 0 0 48px;
-    }
-    .topbar {
-      background: #fff;
-      border-bottom: 1px solid #e8e8e8;
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .topbar a {
-      color: #4a90e2;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    .topbar .sep { color: #bbb; font-size: 0.85rem; }
-    .topbar .current { font-size: 0.9rem; color: #555; }
-
-    .container { max-width: 480px; margin: 0 auto; padding: 24px 16px 0; }
-
-    .lesson-header { margin-bottom: 28px; }
-    .lesson-header .tag {
-      display: inline-block;
-      background: #e8f0fe;
-      color: #4a90e2;
-      font-size: 0.72rem;
-      font-weight: 700;
-      padding: 3px 8px;
-      border-radius: 4px;
-      margin-bottom: 8px;
-    }
-    .lesson-header h1 { font-size: 1.4rem; line-height: 1.4; }
-
-    .section { margin-bottom: 24px; }
-    .section-label {
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: #4a90e2;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    }
-
-    /* 結論ボックス */
-    .conclusion {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      border-left: 4px solid #4a90e2;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    }
-    .conclusion .label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: #4a90e2;
-      margin-bottom: 8px;
-    }
-    .conclusion p { font-size: 0.95rem; line-height: 1.7; }
-
-    /* 定義引用 */
-    .definition {
-      background: #f8f9ff;
-      border: 1px solid #d0d9f0;
-      border-radius: 8px;
-      padding: 14px 16px;
-      font-size: 0.88rem;
-      line-height: 1.7;
-      margin: 12px 0;
-      color: #444;
-    }
-    .definition .source { font-size: 0.75rem; color: #888; margin-top: 6px; }
-
-    p { font-size: 0.92rem; line-height: 1.7; }
-
-    /* 具体例リスト */
-    .example-group { margin-bottom: 14px; }
-    .example-group .eg-title {
-      font-size: 0.8rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-    .eg-title.yes { color: #27ae60; }
-    .eg-title.no { color: #e74c3c; }
-    .eg-list { list-style: none; }
-    .eg-list li {
-      font-size: 0.88rem;
-      line-height: 1.6;
-      padding: 4px 0 4px 20px;
-      position: relative;
-    }
-    .eg-list li::before {
-      position: absolute;
-      left: 0;
-      font-weight: 700;
-    }
-    .yes li::before { content: "○"; color: #27ae60; }
-    .no li::before { content: "×"; color: #e74c3c; }
-
-    /* 試験ポイント */
-    .point-list { list-style: none; }
-    .point-list li {
-      font-size: 0.88rem;
-      line-height: 1.6;
-      padding: 8px 0 8px 16px;
-      border-bottom: 1px solid #f0f0f0;
-      position: relative;
-    }
-    .point-list li:last-child { border-bottom: none; }
-    .point-list li::before {
-      content: "▶";
-      position: absolute;
-      left: 0;
-      color: #4a90e2;
-      font-size: 0.7rem;
-      top: 10px;
-    }
-    .point-list .case {
-      font-size: 0.75rem;
-      color: #888;
-      margin-top: 2px;
-    }
-
-    /* クイズ */
-    .quiz-section { margin-bottom: 24px; }
-    .quiz-item {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-      margin-bottom: 12px;
-    }
-    .quiz-num { font-size: 0.75rem; color: #888; margin-bottom: 8px; }
-    .quiz-q { font-size: 0.95rem; line-height: 1.6; margin-bottom: 14px; font-weight: 600; }
-    .quiz-choices { display: flex; flex-direction: column; gap: 8px; }
-    .quiz-choice {
-      padding: 10px 14px;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      background: #fff;
-      font-size: 0.88rem;
-      cursor: pointer;
-      text-align: left;
-      width: 100%;
-      transition: border-color 0.15s;
-    }
-    .quiz-choice:hover { border-color: #4a90e2; }
-    .quiz-choice.correct { border-color: #27ae60; background: #eafaf1; color: #1e8449; }
-    .quiz-choice.wrong { border-color: #e74c3c; background: #fdf2f2; color: #c0392b; }
-    .quiz-feedback {
-      margin-top: 12px;
-      padding: 10px 12px;
-      border-radius: 8px;
-      font-size: 0.85rem;
-      line-height: 1.6;
-      display: none;
-    }
-    .quiz-feedback.show { display: block; }
-    .quiz-feedback.correct { background: #eafaf1; color: #1e8449; }
-    .quiz-feedback.wrong { background: #fdf2f2; color: #c0392b; }
-
-    .back-link {
-      display: block;
-      text-align: center;
-      margin-top: 32px;
-      color: #4a90e2;
-      font-size: 0.9rem;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="../lesson.css">
 </head>
 <body>
   <nav class="topbar">
@@ -230,11 +49,11 @@
         <div class="example-group">
           <div class="eg-title yes">処分性あり（取消訴訟○）</div>
           <ul class="eg-list yes">
-            <li>建築確認（建築基準法に基づく許可）</li>
+            <li>建築確認（建築基準法に基づく確認）</li>
             <li>飲食店の営業許可・不許可</li>
             <li>税の賦課決定</li>
-            <li>土地区画整理事業計画の決定<br><small style="color:#888">※最高裁大法廷平成20年に判例変更</small></li>
-            <li>病院開設中止勧告<br><small style="color:#888">※事実上の強制力があるため処分性あり（最高裁平成17年）</small></li>
+            <li>土地区画整理事業計画の決定<br><small style="color:#888">※最高裁大法廷平成20年9月10日判決で判例変更</small></li>
+            <li>病院開設中止勧告<br><small style="color:#888">※事実上の強制力があるため処分性あり（最高裁平成17年7月15日判決）</small></li>
           </ul>
         </div>
         <div class="example-group" style="margin-bottom:0">
@@ -263,11 +82,11 @@
           </li>
           <li>
             土地区画整理事業計画の決定は処分性あり
-            <div class="case">最高裁大法廷平成20年（判例変更）</div>
+            <div class="case">最高裁大法廷平成20年9月10日判決（判例変更）</div>
           </li>
           <li>
             病院開設中止勧告は処分性あり
-            <div class="case">最高裁平成17年—事実上の強制力が決め手</div>
+            <div class="case">最高裁平成17年7月15日判決（事実上の強制力が決め手）</div>
           </li>
           <li>
             用途地域の指定は処分性なし
@@ -293,7 +112,7 @@
 
       <div class="quiz-item" id="q2">
         <div class="quiz-num">問2</div>
-        <div class="quiz-q">最高裁大法廷平成20年の判例変更により、土地区画整理事業計画の決定の処分性はどうなったか？</div>
+        <div class="quiz-q">最高裁大法廷平成20年9月10日判決の判例変更により、土地区画整理事業計画の決定の処分性はどうなったか？</div>
         <div class="quiz-choices">
           <button class="quiz-choice" onclick="answer('q2',0)">① 処分性なし（従来どおり）</button>
           <button class="quiz-choice" onclick="answer('q2',1)">② 処分性あり（判例変更）</button>
@@ -303,7 +122,7 @@
 
       <div class="quiz-item" id="q3">
         <div class="quiz-num">問3</div>
-        <div class="quiz-q">病院開設中止勧告について、最高裁平成17年が処分性を認めた主な理由はどれか？</div>
+        <div class="quiz-q">病院開設中止勧告について、最高裁平成17年7月15日判決が処分性を認めた主な理由はどれか？</div>
         <div class="quiz-choices">
           <button class="quiz-choice" onclick="answer('q3',0)">① 勧告に従わないと刑事罰がある</button>
           <button class="quiz-choice" onclick="answer('q3',1)">② 従わないと保険医療機関の指定を受けられず事実上の強制力がある</button>
@@ -318,31 +137,20 @@
 
   <script>
     const answers = {
-      q1: { correct: 1, explanation: '行政指導は従うかどうかが任意であり、直接国民の権利義務を形成しないため、原則として処分性はありません。' },
-      q2: { correct: 1, explanation: '最高裁大法廷平成20年は従来の判例を変更し、土地区画整理事業計画の決定に処分性を認めました。計画決定により施行地区内の土地所有者等の権利行使が制限されることが根拠です。' },
-      q3: { correct: 1, explanation: '最高裁平成17年は、勧告に従わない場合に保険医療機関の指定申請が事実上不可能になるという「事実上の強制力」を重視して処分性を認めました。' }
+      q1: {
+        correct: 1,
+        explanation: '行政指導は従うかどうかが任意であり、直接国民の権利義務を形成しないため、原則として処分性はありません。'
+      },
+      q2: {
+        correct: 1,
+        explanation: '最高裁大法廷平成20年9月10日判決は従来の判例を変更し、土地区画整理事業計画の決定に処分性を認めました。計画決定により施行地区内の土地所有者等の権利行使が制限されることが根拠です。'
+      },
+      q3: {
+        correct: 1,
+        explanation: '最高裁平成17年7月15日判決は、勧告に従わない場合に保険医療機関の指定申請が事実上不可能になるという「事実上の強制力」を重視して処分性を認めました。'
+      }
     };
-
-    const answered = {};
-
-    function answer(qid, selected) {
-      if (answered[qid]) return;
-      answered[qid] = true;
-
-      const a = answers[qid];
-      const choices = document.querySelectorAll(`#${qid} .quiz-choice`);
-      choices.forEach((btn, idx) => {
-        btn.onclick = null;
-        if (idx === a.correct) btn.classList.add('correct');
-        else if (idx === selected && selected !== a.correct) btn.classList.add('wrong');
-      });
-
-      const fb = document.getElementById(`${qid}-fb`);
-      fb.className = selected === a.correct
-        ? 'quiz-feedback correct show'
-        : 'quiz-feedback wrong show';
-      fb.textContent = (selected === a.correct ? '✓ 正解！ ' : '✗ 不正解。') + a.explanation;
-    }
   </script>
+  <script src="../lesson.js"></script>
 </body>
 </html>

@@ -13,9 +13,11 @@
 | パス | 役割 |
 |------|------|
 | `index.html` | トップページ。教材カード一覧 + 総合ミニクイズ |
-| `styles.css` | 全ページ共通スタイル。インラインCSSは書かない |
+| `styles.css` | トップページ専用スタイル |
 | `app.js` | トップページのクイズロジック |
-| `lessons/*.html` | 1論点1ファイルの教材ページ（CSS・JSは各自インライン） |
+| `lesson.css` | 教材ページ共通スタイル（lessons/*.html が読み込む） |
+| `lesson.js` | 教材ページ共通クイズエンジン（lessons/*.html が読み込む） |
+| `lessons/*.html` | 1論点1ファイルの教材ページ |
 | `docs/content-guideline.md` | 教材コンテンツの書き方ルール（必読） |
 | `.github/workflows/deploy.yml` | デプロイワークフロー（原則変更不要） |
 
@@ -27,12 +29,13 @@
 1. **まず結論** — 1〜2文で論点の核心を述べる
 2. **初心者向け説明** — 判例定義や条文を引用しつつ平易に解説
 3. **具体例** — ○/×の対比形式
-4. **試験で問われるポイント** — 箇条書き、判例名・年号を明記
+4. **試験で問われるポイント** — 箇条書き、判例名・年月日・判決種別を明記
 5. **ミニクイズ3問** — 択一式、解答後に解説を表示
 
 ## コーディング規約
 
-- `styles.css` を `<link>` で読み込む（index.htmlから参照）
+- `lessons/*.html` は `<link rel="stylesheet" href="../lesson.css">` で読み込む
+- `lessons/*.html` のクイズデータはページ内 `<script>` で `const answers = {...}` として定義し、その後 `<script src="../lesson.js"></script>` を読み込む
 - 外部ライブラリ（CDN含む）は使用しない
 - `max-width: 480px` + `padding: 0 16px` でセンタリング
 - フォントは `-apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif`
@@ -52,4 +55,5 @@
 - `main` ブランチに直接プッシュしない
 - ビルドツール（webpack, vite 等）を導入しない
 - 教材の法令・判例内容を根拠なく変更しない（一次資料で確認すること）
-- `styles.css` にページ固有のスタイルを追加しない（lessons/ ページはインライン）
+- `lesson.css` / `styles.css` にページ固有のスタイルを追加しない
+- 判例表記から年月日・判決種別を省略しない（content-guideline.md §2 参照）
