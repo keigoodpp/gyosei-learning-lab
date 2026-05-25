@@ -20,7 +20,8 @@
 ├── lessons/
 │   └── shobunsei.html          # 行政法：処分性とは何か
 ├── docs/
-│   └── content-guideline.md   # 法令・判例教材の書き方ルール
+│   ├── content-guideline.md   # 法令・判例教材の書き方ルール
+│   └── source-log.md          # 教材に記載した判例・条文の一次資料確認ログ
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml          # GitHub Pages 自動デプロイ

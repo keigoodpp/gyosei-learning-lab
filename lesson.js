@@ -6,6 +6,7 @@ const answered = {};
 
 function answer(qid, selected) {
   if (answered[qid]) return;
+  if (typeof answers === 'undefined' || !answers[qid]) return;
   answered[qid] = true;
 
   const a = answers[qid];
