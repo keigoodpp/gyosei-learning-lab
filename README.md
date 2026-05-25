@@ -8,18 +8,22 @@
 - 「結論 → 説明 → 具体例 → 試験ポイント → クイズ」の流れで定着率を測る
 - 静的HTMLのみで維持コストゼロのホスティングを実現する
 
-## 構成
+## ファイル構成
 
 ```
 /
-├── index.html          # トップページ（教材一覧 + 総合ミニクイズ）
+├── index.html                  # トップページ（教材一覧 + 総合ミニクイズ）
+├── styles.css                  # 全ページ共通スタイル
+├── app.js                      # トップページ クイズロジック
 ├── lessons/
-│   └── shobunsei.html  # 行政法：処分性とは何か
+│   └── shobunsei.html          # 行政法：処分性とは何か
+├── docs/
+│   └── content-guideline.md   # 法令・判例教材の書き方ルール
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml  # GitHub Pages 自動デプロイ
-├── AGENTS.md           # AIエージェント向け作業ルール
-└── TASK_TEMPLATE.md    # 新規タスク作成テンプレート
+│       └── deploy.yml          # GitHub Pages 自動デプロイ
+├── AGENTS.md                   # AIエージェント向け作業ルール
+└── TASK_TEMPLATE.md            # 新規教材追加タスクテンプレート
 ```
 
 ## 公開URL
@@ -30,19 +34,22 @@ https://keigoodpp.github.io/gyosei-learning-lab/
 
 ## 動作確認
 
-1. ブラウザで上記URLを開く
-2. 教材カード「処分性とは何か」をタップして `lessons/shobunsei.html` に遷移することを確認
-3. 各ページのミニクイズが正誤判定・解説を表示することを確認
+1. ブラウザで公開URLを開く
+2. 教材カード「処分性とは何か」をタップ → `lessons/shobunsei.html` に遷移することを確認
+3. ミニクイズが正誤判定・解説を表示することを確認
 4. Chrome DevTools で幅 390px に設定し、横スクロールが発生しないことを確認
 
 ## ローカル確認
 
 ```bash
-# Python 3
 python3 -m http.server 8080
 # → http://localhost:8080 を開く
 ```
 
 ## 教材を追加するには
 
-`TASK_TEMPLATE.md` を参照して Issue を作成 → `lessons/` 以下に HTML を追加 → `index.html` の教材カードにリンクを追加。
+1. `TASK_TEMPLATE.md` を参照して Issue を作成
+2. `docs/content-guideline.md` に従って `lessons/<slug>.html` を作成
+3. `index.html` の教材セクションに `.lesson-card` を追加
+4. `README.md` のファイル構成表を更新
+5. PR を作成して main にマージ
