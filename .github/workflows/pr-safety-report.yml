@@ -1,0 +1,43 @@
+name: PR Safety Report
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  safety-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch base branch
+        run: git fetch origin main
+
+      - name: Get changed files
+        id: diff
+        run: |
+          if git diff --name-only origin/main...HEAD > changed-files.txt 2>/dev/null; then
+            echo "diff_ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "diff_ok=false" >> "$GITHUB_OUTPUT"
+            echo "差分取得失敗・人間確認必要" > changed-files.txt
+          fi
+
+      - name: Run PR Safety Report
+        run: |
+          if [ "${{ steps.diff.outputs.diff_ok }}" = "false" ]; then
+            echo "# PR Safety Report" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "> **差分取得失敗・人間確認必要**" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "git diff の実行に失敗しました。手動で変更ファイルを確認してください。" >> "$GITHUB_STEP_SUMMARY"
+          else
+            node scripts/pr-safety-report.mjs changed-files.txt
+          fi
