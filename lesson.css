@@ -156,6 +156,7 @@ p { font-size: 0.92rem; line-height: 1.7; }
   border-radius: 8px;
   background: #fff;
   font-size: 0.88rem;
+  line-height: 1.6;
   cursor: pointer;
   text-align: left;
   width: 100%;
@@ -183,5 +184,20 @@ p { font-size: 0.92rem; line-height: 1.7; }
   margin-top: 32px;
   color: #4a90e2;
   font-size: 0.9rem;
+  text-decoration: none;
+}
+
+/* ===== Lesson footer nav ===== */
+.lesson-footer { margin-top: 32px; }
+.lesson-footer .back-link { margin-top: 12px; }
+.next-step-link {
+  display: block;
+  text-align: center;
+  padding: 12px 20px;
+  background: #4a90e2;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
   text-decoration: none;
 }
