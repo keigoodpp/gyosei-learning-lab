@@ -21,16 +21,39 @@
 | `docs/content-guideline.md` | 教材コンテンツの書き方ルール（必読） |
 | `.github/workflows/deploy.yml` | デプロイワークフロー（原則変更不要） |
 
-## 教材ページの必須構成
+## 教材ページの型
 
-`lessons/` 以下に新しい教材を追加するときは `docs/content-guideline.md` に従うこと。
-構成順序は以下のとおり（変更不可）。
+`lessons/` 以下の教材ページには以下の型がある。新規追加前に、どの型に該当するかを `docs/learning-architecture.md` で確認すること。
+
+### 1. 標準説明教材型
+
+従来の5部構成を使うページ。構成順序は以下のとおり。
 
 1. **まず結論** — 1〜2文で論点の核心を述べる
 2. **初心者向け説明** — 判例定義や条文を引用しつつ平易に解説
 3. **具体例** — ○/×の対比形式
 4. **試験で問われるポイント** — 箇条書き、判例名・年月日・判決種別を明記
 5. **ミニクイズ3問** — 択一式、解答後に解説を表示
+
+### 2. 基礎演習教材型
+
+`docs/content-guideline.md` と `docs/operation-checklist.md` で定義された7セクション構成を使うページ。
+一撃定義・まずイメージ・よくある勘違い・判例を場面で覚える（または場面で覚える）・1分復習・ミニクイズ・参考折りたたみ。
+
+既存の `lessons/shobunsei.html`・`lessons/genkoku-tekikaku.html`・`lessons/uttae-no-rieki.html`・`lessons/shusso-kikan.html` がこの型に該当する。
+
+### 3. 横断判定ドリル型
+
+`docs/learning-architecture.md` で定義された第3層（横断判定ドリル）の教材。
+複数論点のうち、どこをまず疑うべきかを判断するページ。セクション構成は教材設計に従って柔軟に決める。
+
+`lessons/torikeshi-entry-drill.html` がこの型に該当する。
+
+### 型の共通ルール
+
+- 法的正確性・クイズ正答・確認状態・source-log管理は型によらず厳守する
+- 新しい教材型を作る場合は、先に `docs/` に設計を記録してから作る
+- `docs/content-guideline.md`・`docs/operation-checklist.md`・`docs/learning-architecture.md` の方針に従うこと
 
 ## コーディング規約
 
@@ -45,10 +68,11 @@
 ## 新規教材追加の手順
 
 1. `TASK_TEMPLATE.md` をコピーして Issue を作成
-2. `docs/content-guideline.md` を読み、ルールに従って `lessons/<slug>.html` を作成
-3. `index.html` の教材セクションに `.lesson-card` を追加
-4. `README.md` のファイル構成表を更新
-5. コミット → プッシュ → PR → main にマージ
+2. `docs/learning-architecture.md` で教材型（標準説明教材型・基礎演習教材型・横断判定ドリル型）を確認する
+3. 該当する型のガイドライン（`docs/content-guideline.md` 等）を読み、ルールに従って `lessons/<slug>.html` を作成
+4. `index.html` への導線追加はページ内容確認後に別PRで行う（任意）
+5. `README.md` のファイル構成表を更新
+6. コミット → プッシュ → PR → main にマージ
 
 ## 確認フロー（条文・判例の確認状態）
 
