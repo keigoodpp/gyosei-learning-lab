@@ -299,6 +299,39 @@ p { font-size: 0.92rem; line-height: 1.7; }
   font-weight: 700;
 }
 
+/* ===== Reference collapsible ===== */
+.ref-details {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border: 1px solid #d0d9f0;
+  background: #f8f9ff;
+  overflow: hidden;
+}
+.ref-details > summary {
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4a90e2;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ref-details > summary::before {
+  content: "▶";
+  font-size: 0.65rem;
+  transition: transform 0.15s;
+}
+.ref-details[open] > summary::before { transform: rotate(90deg); }
+.ref-inner { padding: 0 16px 16px; }
+.ref-note {
+  font-size: 0.78rem;
+  color: #888;
+  text-align: center;
+  margin-top: 4px;
+}
+
 /* ===== Lesson footer nav ===== */
 .lesson-footer { margin-top: 32px; }
 .lesson-footer .back-link { margin-top: 12px; }
