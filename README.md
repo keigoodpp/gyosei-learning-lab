@@ -21,7 +21,8 @@
 │   ├── shobunsei.html          # 行政法：処分性とは何か
 │   ├── genkoku-tekikaku.html   # 行政法：原告適格とは何か
 │   ├── uttae-no-rieki.html     # 行政法：訴えの利益とは何か
-│   └── shusso-kikan.html       # 行政法：出訴期間とは何か
+│   ├── shusso-kikan.html       # 行政法：出訴期間とは何か
+│   └── admin-procedure-map.html  # 行政法：行政手続法の全体地図（申請に対する処分・不利益処分・行政指導・届出・意見公募手続など）
 ├── docs/
 │   ├── content-guideline.md   # 法令・判例教材の書き方ルール
 │   ├── source-log.md          # 教材に記載した判例・条文の一次資料確認ログ
