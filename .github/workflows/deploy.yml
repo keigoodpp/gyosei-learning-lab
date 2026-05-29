@@ -23,8 +23,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Build _site (exclude docs/card-drafts/ and non-public files)
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp app.js _site/
+          cp lesson.css lesson.js styles.css _site/
+          cp -R lessons _site/
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: "_site"
       - id: deployment
         uses: actions/deploy-pages@v4
