@@ -1005,7 +1005,6 @@ PR133 merge後、ユーザーがスマホ表示、クイズQ1〜Q3、参考折�
 
 PR133では、行政立法lesson追加時にCodex ReviewとChatGPTレビューを実施し、Codex P1指摘（source-log既存詳細セクション削除）への対応後、最新headに対して Codex Review: Didn't find any major issues. Another round soon, please! を確認済み。PR135 merge後、Codex自動レビューで、AIクロスチェック済みへの昇格根拠がsource-log上で明示不足と指摘されたため、確認者欄を Claude Code + Codex Review + ChatGPT に補正する。
 
-
 ## 追記ルール
 
 新しい教材を追加したとき、または既存教材の判例表記を修正したときは：
