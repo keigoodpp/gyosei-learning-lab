@@ -23,6 +23,7 @@
 │   ├── uttae-no-rieki.html     # 行政法：訴えの利益とは何か
 │   ├── shusso-kikan.html       # 行政法：出訴期間とは何か
 │   ├── admin-procedure-map.html  # 行政法：行政手続法の全体地図（申請に対する処分・不利益処分・行政指導・届出・意見公募手続など）
+│   ├── admin-application-disposition-map.html  # 行政法：申請に対する処分の全体地図（申請・不利益処分・届出・行政指導・処分性の制度境界を整理する教材）
 │   ├── admin-adverse-disposition-map.html  # 行政法：不利益処分の全体地図（申請に対する処分・行政指導・届出・行政罰・処分性との制度境界を整理する教材）
 │   ├── admin-appeal-map.html     # 行政法：行政不服審査法の全体地図（処分・不作為・審査請求・再調査の請求・再審査請求・審理員・裁決・執行停止など）
 │   ├── state-compensation-map.html  # 行政法：国家賠償法・損失補償の全体地図（国家賠償法1条・2条、営造物責任、損失補償、特別の犠牲など）
