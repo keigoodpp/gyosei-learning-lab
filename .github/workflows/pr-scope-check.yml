@@ -18,7 +18,7 @@ jobs:
           script: |
             const pr = context.payload.pull_request;
             const body = pr?.body || '';
-            const typeMatch = body.match(/^\s*PR種別\s*[:：]\s*(.+?)\s*$/m);
+            const typeMatch = body.match(/^\s*(?:[-*]\s*)?PR種別\s*[:：]\s*(.+?)\s*$/m);
 
             const rules = {
               '教材本文追加PR': {
