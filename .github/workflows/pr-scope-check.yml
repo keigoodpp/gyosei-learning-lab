@@ -1,0 +1,145 @@
+name: PR Scope Check
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  pr-scope-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check changed files are allowed for PR type
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const body = pr?.body || '';
+            const typeMatch = body.match(/^\s*PR種別\s*[:：]\s*(.+?)\s*$/m);
+
+            const rules = {
+              '教材本文追加PR': {
+                descriptions: [
+                  'lessons/ 配下の .html',
+                  'README.md',
+                  'docs/source-log.md',
+                ],
+                isAllowed: (file) =>
+                  (file.startsWith('lessons/') && file.endsWith('.html')) ||
+                  file === 'README.md' ||
+                  file === 'docs/source-log.md',
+              },
+              '既存本文修正PR': {
+                descriptions: [
+                  'lessons/ 配下の .html',
+                  'docs/source-log.md',
+                ],
+                isAllowed: (file) =>
+                  (file.startsWith('lessons/') && file.endsWith('.html')) ||
+                  file === 'docs/source-log.md',
+              },
+              'source-log状態反映PR': {
+                descriptions: ['docs/source-log.md'],
+                isAllowed: (file) => file === 'docs/source-log.md',
+              },
+              'トップ導線追加PR': {
+                descriptions: ['index.html'],
+                isAllowed: (file) => file === 'index.html',
+              },
+              'card-roadmap更新PR': {
+                descriptions: ['docs/card-roadmap.md'],
+                isAllowed: (file) => file === 'docs/card-roadmap.md',
+              },
+              '設計メモPR': {
+                descriptions: ['docs/card-roadmap.md'],
+                isAllowed: (file) => file === 'docs/card-roadmap.md',
+              },
+              '運用ドキュメントPR': {
+                descriptions: [
+                  'AGENTS.md',
+                  'CLAUDE.md',
+                  '.github/pull_request_template.md',
+                  '.github/PULL_REQUEST_TEMPLATE.md',
+                ],
+                isAllowed: (file) => [
+                  'AGENTS.md',
+                  'CLAUDE.md',
+                  '.github/pull_request_template.md',
+                  '.github/PULL_REQUEST_TEMPLATE.md',
+                ].includes(file),
+              },
+              'CI整備PR': {
+                descriptions: ['.github/workflows/pr-scope-check.yml'],
+                isAllowed: (file) => file === '.github/workflows/pr-scope-check.yml',
+              },
+            };
+
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pr.number,
+              per_page: 100,
+            });
+            const changedFiles = files.map((file) => file.filename);
+
+            const logDetails = ({ prType, allowedDescriptions, violations }) => {
+              console.log(`PR種別: ${prType || '(未取得)'}`);
+              console.log('変更ファイル一覧:');
+              for (const file of changedFiles) {
+                console.log(`- ${file}`);
+              }
+              console.log('許可ファイル一覧:');
+              for (const description of allowedDescriptions) {
+                console.log(`- ${description}`);
+              }
+              if (violations) {
+                console.log('違反ファイル一覧:');
+                for (const file of violations) {
+                  console.log(`- ${file}`);
+                }
+              }
+            };
+
+            if (!typeMatch) {
+              logDetails({
+                prType: '',
+                allowedDescriptions: Object.keys(rules).map((type) => `PR種別: ${type}`),
+                violations: changedFiles,
+              });
+              core.setFailed('PR本文に「PR種別:」または「PR種別：」が見つかりません。');
+              return;
+            }
+
+            const prType = typeMatch[1].trim();
+            const rule = rules[prType];
+
+            if (!rule) {
+              logDetails({
+                prType,
+                allowedDescriptions: Object.keys(rules).map((type) => `PR種別: ${type}`),
+                violations: changedFiles,
+              });
+              core.setFailed(`未対応のPR種別です: ${prType}`);
+              return;
+            }
+
+            const violations = changedFiles.filter((file) => !rule.isAllowed(file));
+
+            if (violations.length > 0) {
+              logDetails({
+                prType,
+                allowedDescriptions: rule.descriptions,
+                violations,
+              });
+              core.setFailed('PR種別の許可ファイル外の変更が含まれています。');
+              return;
+            }
+
+            console.log(`PR種別: ${prType}`);
+            console.log('変更ファイル一覧:');
+            for (const file of changedFiles) {
+              console.log(`- ${file}`);
+            }
