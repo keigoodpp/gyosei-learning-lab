@@ -61,19 +61,27 @@ jobs:
                 descriptions: [
                   'AGENTS.md',
                   'CLAUDE.md',
+                  'docs/operation-checklist.md',
+                  'docs/content-guideline.md',
+                  'docs/learning-architecture.md',
                   '.github/pull_request_template.md',
                   '.github/PULL_REQUEST_TEMPLATE.md',
                 ],
                 isAllowed: (file) => [
                   'AGENTS.md',
                   'CLAUDE.md',
+                  'docs/operation-checklist.md',
+                  'docs/content-guideline.md',
+                  'docs/learning-architecture.md',
                   '.github/pull_request_template.md',
                   '.github/PULL_REQUEST_TEMPLATE.md',
                 ].includes(file),
               },
               'CI整備PR': {
-                descriptions: ['.github/workflows/pr-scope-check.yml'],
-                isAllowed: (file) => file === '.github/workflows/pr-scope-check.yml',
+                descriptions: ['.github/workflows/ 配下の .yml または .yaml'],
+                isAllowed: (file) =>
+                  file.startsWith('.github/workflows/') &&
+                  (file.endsWith('.yml') || file.endsWith('.yaml')),
               },
             };
 
