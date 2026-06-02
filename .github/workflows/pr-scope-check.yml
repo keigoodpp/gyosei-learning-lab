@@ -53,6 +53,17 @@ jobs:
                 descriptions: ['docs/card-roadmap.md'],
                 isAllowed: (file) => file === 'docs/card-roadmap.md',
               },
+              '教材後処理PR': {
+                descriptions: [
+                  'docs/source-log.md',
+                  'index.html',
+                  'docs/card-roadmap.md',
+                ],
+                isAllowed: (file) =>
+                  file === 'docs/source-log.md' ||
+                  file === 'index.html' ||
+                  file === 'docs/card-roadmap.md',
+              },
               '設計メモPR': {
                 descriptions: ['docs/card-roadmap.md'],
                 isAllowed: (file) => file === 'docs/card-roadmap.md',
