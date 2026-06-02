@@ -1,0 +1,86 @@
+name: Codex Action PR Test
+
+# Manual-only trigger. This workflow must never start automatically.
+# Do not add issues / pull_request / push / schedule triggers here.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  codex-action-pr-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Fail early if OPENAI_API_KEY is missing
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "${OPENAI_API_KEY}" ]; then
+            echo "::error::OPENAI_API_KEY secret is not set. Configure it in repo Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          echo "OPENAI_API_KEY is present."
+
+      - name: Run Codex
+        uses: openai/codex-action@v1
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          sandbox: workspace-write
+          prompt: |
+            Create or update only docs/codex-action-pr-test.md.
+            Add a section titled "GitHub Actions Result" explaining that this
+            file was created or updated by Codex running inside GitHub Actions.
+            Constraints:
+            - Do not modify any other files.
+            - Do not modify GitHub Actions workflows.
+            - Do not modify package files (package.json, lock files).
+            - Do not modify application code.
+            - Keep the change documentation-only.
+
+      - name: Show changed files (safety check)
+        run: |
+          echo "Changed files (including untracked):"
+          git status --porcelain
+
+      - name: Guard allowed files
+        run: |
+          # Use porcelain so newly CREATED (untracked) files are detected too.
+          # `git diff --name-only` alone would miss brand-new files.
+          changed="$(git status --porcelain | sed 's/^...//')"
+          echo "Detected changes:"
+          echo "${changed}"
+          if [ -z "${changed}" ]; then
+            echo "::error::No changes detected. Codex did not modify the workspace."
+            exit 1
+          fi
+          disallowed="$(echo "${changed}" | grep -v '^docs/codex-action-pr-test\.md$' || true)"
+          if [ -n "${disallowed}" ]; then
+            echo "::error::Disallowed files were changed. Aborting before PR creation."
+            echo "${disallowed}"
+            exit 1
+          fi
+          echo "Only docs/codex-action-pr-test.md was changed. OK to proceed."
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: codex/action-pr-test
+          draft: true
+          title: "Test Codex Action generated PR"
+          commit-message: "docs: test Codex Action PR creation"
+          add-paths: |
+            docs/codex-action-pr-test.md
+          body: |
+            Controlled test: Codex Action generated a docs-only change and
+            GitHub Actions created this PR.
+
+            Success criteria:
+            - Only docs/codex-action-pr-test.md is changed.
+            - This PR was created by GitHub Actions, not by Codex pushing directly.
+
+            Do not merge this PR.
