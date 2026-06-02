@@ -24,13 +24,9 @@ jobs:
               '教材本文追加PR': {
                 descriptions: [
                   'lessons/ 配下の .html',
-                  'README.md',
-                  'docs/source-log.md',
                 ],
                 isAllowed: (file) =>
-                  (file.startsWith('lessons/') && file.endsWith('.html')) ||
-                  file === 'README.md' ||
-                  file === 'docs/source-log.md',
+                  (file.startsWith('lessons/') && file.endsWith('.html')),
               },
               '既存本文修正PR': {
                 descriptions: [
@@ -56,11 +52,13 @@ jobs:
               '教材後処理PR': {
                 descriptions: [
                   'docs/source-log.md',
+                  'README.md',
                   'index.html',
                   'docs/card-roadmap.md',
                 ],
                 isAllowed: (file) =>
                   file === 'docs/source-log.md' ||
+                  file === 'README.md' ||
                   file === 'index.html' ||
                   file === 'docs/card-roadmap.md',
               },
