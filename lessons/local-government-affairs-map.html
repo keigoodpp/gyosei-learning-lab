@@ -181,8 +181,8 @@
         <div class="quiz-num">問1</div>
         <div class="quiz-q">普通地方公共団体として最も適切な組み合わせはどれか。</div>
         <div class="quiz-choices">
-          <button class="quiz-choice" onclick="answer('q1',0)">① 都道府県と市町村</button>
-          <button class="quiz-choice" onclick="answer('q1',1)">② 国と地方公共団体</button>
+          <button class="quiz-choice" onclick="answer('q1',0)">① 国と地方公共団体</button>
+          <button class="quiz-choice" onclick="answer('q1',1)">② 都道府県と市町村</button>
           <button class="quiz-choice" onclick="answer('q1',2)">③ 住民と議会</button>
         </div>
         <div class="quiz-feedback" id="q1-fb"></div>
@@ -192,9 +192,9 @@
         <div class="quiz-num">問2</div>
         <div class="quiz-q">自治事務と法定受託事務の区別として適切なものはどれか。</div>
         <div class="quiz-choices">
-          <button class="quiz-choice" onclick="answer('q2',0)">① 自治事務と法定受託事務は、地方公共団体が処理する事務の入口分類として区別する</button>
-          <button class="quiz-choice" onclick="answer('q2',1)">② 法定受託事務は、常に国が直接処理する事務であり地方公共団体は関係しない</button>
-          <button class="quiz-choice" onclick="answer('q2',2)">③ 自治事務は、住民が個人で自由に処理する私的事務である</button>
+          <button class="quiz-choice" onclick="answer('q2',0)">① 法定受託事務は、常に国が直接処理する事務であり地方公共団体は関係しない</button>
+          <button class="quiz-choice" onclick="answer('q2',1)">② 自治事務は、住民が個人で自由に処理する私的事務である</button>
+          <button class="quiz-choice" onclick="answer('q2',2)">③ 自治事務と法定受託事務は、地方公共団体が処理する事務の入口分類として区別する</button>
         </div>
         <div class="quiz-feedback" id="q2-fb"></div>
       </div>
@@ -219,11 +219,11 @@
   <script>
     const answers = {
       q1: {
-        correct: 0,
+        correct: 1,
         explanation: '普通地方公共団体は、都道府県と市町村として入口を整理する。国、住民、議会は地方自治法で重要な主体だが、普通地方公共団体そのものの組み合わせではない。'
       },
       q2: {
-        correct: 0,
+        correct: 2,
         explanation: '自治事務と法定受託事務は、地方公共団体が処理する事務の入口分類として区別する。法定受託事務を国が直接処理する事務そのものとして読まない。'
       },
       q3: {
