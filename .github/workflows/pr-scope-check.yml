@@ -92,6 +92,21 @@ jobs:
                   file.startsWith('.github/workflows/') &&
                   (file.endsWith('.yml') || file.endsWith('.yaml')),
               },
+              // 公開分析素材PR：
+              // 過去問分析から作成した公開可能な制度分析メモ、分析CSV、教材化前seedを追加するPR。
+              // 問題文全文・選択肢全文・解説サイト本文のコピペは含めない。
+              // lessons, source-log, README, index, roadmap, CSS, JS, Actions とは混在させない。
+              '公開分析素材PR': {
+                descriptions: [
+                  'study/past-questions/ 配下',
+                  'data/exam-analysis/ 配下',
+                  'drafts/lesson-seeds/ 配下',
+                ],
+                isAllowed: (file) =>
+                  file.startsWith('study/past-questions/') ||
+                  file.startsWith('data/exam-analysis/') ||
+                  file.startsWith('drafts/lesson-seeds/'),
+              },
             };
 
             const files = await github.paginate(github.rest.pulls.listFiles, {
