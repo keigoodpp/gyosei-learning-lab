@@ -79,6 +79,15 @@
 └── TASK_TEMPLATE.md            # 新規教材追加タスクテンプレート
 ```
 
+
+## 公開分析素材の進捗
+
+| 年度・科目 | 範囲 | 公開分析メモ | CSV | lesson seed | 状態 | 次工程 |
+|------------|------|--------------|-----|-------------|------|--------|
+| 令和7年度 行政法5肢択一 | 問8〜問26 | [`study/past-questions/administrative-law/2025/`](study/past-questions/administrative-law/2025/) に `q08.md`〜`q26.md` 作成済み | 問8〜問14は統合CSV（`data/exam-analysis/administrative-law-2025.csv`）に収録、問15〜問26は問別CSV作成済み | `drafts/lesson-seeds/administrative-law/` に問対応の seed 作成済み | 公開分析素材化完了 | 教材HTML化、source-log整理、統合CSV更新、UI導線整備は別PR |
+
+> この進捗表は管理・索引用です。試験問題本文、選択肢本文、外部解説本文は転載しません。
+
 ## 公開URL
 
 ```

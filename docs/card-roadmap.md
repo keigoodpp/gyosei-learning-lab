@@ -242,6 +242,19 @@ PR209で 住民監査請求と住民訴訟の全体地図 lessonを追加し、m
 
 特に、行政法総論、行政手続法、行政不服審査法、行政事件訴訟法、国家賠償法、地方自治法は、それぞれ下位カードを持つ前提で整理する。
 
+
+## 令和7年度 行政法5肢択一 公開分析素材ロードマップ
+
+| 項目 | 状態 | メモ |
+|------|------|------|
+| 対象範囲 | 完了 | 問8〜問26の公開分析素材化が完了済み |
+| 公開分析メモ | 完了 | `study/past-questions/administrative-law/2025/q08.md`〜`q26.md` が存在する |
+| CSV | 一部形式差ありで完了扱い | 問8〜問14は統合CSV（`data/exam-analysis/administrative-law-2025.csv`）収録、問15〜問26は問別CSV（`data/exam-analysis/administrative-law-2025-q15.csv`〜`q26.csv`）が存在する |
+| lesson seed | 完了 | `drafts/lesson-seeds/administrative-law/` に問対応の seed が作成済み |
+| 後続工程 | 別PR | 教材HTML化、source-log整理、統合CSV更新、UI導線整備は本ロードマップ上の次工程として分離する |
+
+> この節は進捗管理のみを目的とし、各問の法的説明、正解番号、正誤理由、問題文・選択肢本文は扱わない。
+
 ## 当面の優先候補
 
 次に教材本文追加PRを作る場合は、行政法側を優先する。
