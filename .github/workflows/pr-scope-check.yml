@@ -66,6 +66,22 @@ jobs:
                 descriptions: ['docs/card-roadmap.md'],
                 isAllowed: (file) => file === 'docs/card-roadmap.md',
               },
+              // デザイン調整PR：
+              // サイト全体の見た目（CSS・トップページ・教材ページの装飾）を調整するPR。
+              // 法令・判例の本文内容の変更は含めない（色・クラス等の機械的置換のみ可）。
+              'デザイン調整PR': {
+                descriptions: [
+                  'styles.css',
+                  'lesson.css',
+                  'index.html',
+                  'lessons/ 配下の .html',
+                ],
+                isAllowed: (file) =>
+                  file === 'styles.css' ||
+                  file === 'lesson.css' ||
+                  file === 'index.html' ||
+                  (file.startsWith('lessons/') && file.endsWith('.html')),
+              },
               '運用ドキュメントPR': {
                 descriptions: [
                   'AGENTS.md',
