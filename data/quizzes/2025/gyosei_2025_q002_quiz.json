@@ -1,0 +1,179 @@
+{
+  "sourceExam": {
+    "examName": "行政書士試験",
+    "year": 2025,
+    "questionNo": 2,
+    "sourceUrl": "https://gyosyo.info/令和7年度2025年度｜行政書士試験の問題と解説/",
+    "sourceType": "past_exam_transformed",
+    "copyrightNote": "Original exam text is not reproduced. This file contains transformed issue-based learning quizzes."
+  },
+  "metadata": {
+    "subject": "基礎法学",
+    "field": "司法制度",
+    "mainTopic": "裁判員制度の基本構造",
+    "importance": "B",
+    "difficulty": "standard",
+    "estimatedStudyMinutes": 10
+  },
+  "topics": [
+    {
+      "topicId": "basic-saibanin-system",
+      "topicName": "裁判員制度",
+      "rank": "B",
+      "summary": "裁判員制度は、死刑または無期の懲役・禁錮に当たる罪など重大な刑事事件の地方裁判所の第一審に、衆議院議員の選挙権を有する者からくじ等で選ばれた裁判員が参加する制度。原則は裁判官3人＋裁判員6人の合議体で、裁判員は事実認定・法令の適用・量刑に関与し、法令の解釈や訴訟手続上の判断は裁判官のみが行う。評決は合議体の過半数で、かつ裁判官・裁判員の双方の意見を含むことが必要。",
+      "memoryPoint": "重大刑事事件の地裁第一審／裁判官3＋裁判員6／評決は過半数＋双方の意見。",
+      "trapPatterns": [
+        "民事事件や控訴審にも裁判員が参加するとする",
+        "裁判員が法令の解釈にも関与するとする",
+        "単純過半数だけで有罪にできるとする",
+        "裁判官と裁判員の人数を逆にする"
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "quizId": "basic-saibanin-system-001",
+      "topicId": "basic-saibanin-system",
+      "questionType": "AB",
+      "prompt": "裁判員制度の対象となる事件は？",
+      "choices": {
+        "A": "刑事事件のみ",
+        "B": "民事事件も含む"
+      },
+      "answer": "A",
+      "explanation": "裁判員制度の対象は刑事事件に限られ、民事事件・行政事件には裁判員は関与しない。「国民の司法参加」というイメージから民事にも及ぶと誤解させるのが定番のひっかけ。",
+      "memoryPoint": "裁判員が参加するのは刑事裁判だけ。",
+      "trapPattern": "民事事件や行政事件にも裁判員が参加するとしてくる。",
+      "sourceExamId": "2025-q002",
+      "order": 1
+    },
+    {
+      "quizId": "basic-saibanin-system-002",
+      "topicId": "basic-saibanin-system",
+      "questionType": "AB",
+      "prompt": "裁判員が参加する審級は？",
+      "choices": {
+        "A": "控訴審（高等裁判所）にも参加する",
+        "B": "地方裁判所の第一審のみ"
+      },
+      "answer": "B",
+      "explanation": "裁判員が加わるのは地方裁判所で行われる第一審のみ。控訴審・上告審は裁判官のみで審理する。簡易裁判所や高等裁判所を持ち出す選択肢は誤り。",
+      "memoryPoint": "裁判員裁判＝地裁の第一審だけ。控訴審は裁判官のみ。",
+      "trapPattern": "控訴審や高裁の事件にも裁判員が加わるとしてくる。",
+      "sourceExamId": "2025-q002",
+      "order": 2
+    },
+    {
+      "quizId": "basic-saibanin-system-003",
+      "topicId": "basic-saibanin-system",
+      "questionType": "AB",
+      "prompt": "裁判員裁判の合議体の原則の構成は？",
+      "choices": {
+        "A": "裁判官3人＋裁判員6人",
+        "B": "裁判官6人＋裁判員3人"
+      },
+      "answer": "A",
+      "explanation": "原則は裁判官3人と裁判員6人の合議体（公訴事実に争いがない一定の場合は裁判官1人＋裁判員4人も可能）。人数を入れ替えた選択肢が典型的なひっかけ。",
+      "memoryPoint": "原則：裁判官3＋裁判員6（例外：1＋4）。",
+      "trapPattern": "裁判官と裁判員の人数を逆にして出題してくる。",
+      "sourceExamId": "2025-q002",
+      "order": 3
+    },
+    {
+      "quizId": "basic-saibanin-system-004",
+      "topicId": "basic-saibanin-system",
+      "questionType": "AB",
+      "prompt": "裁判員裁判の対象事件の範囲は？",
+      "choices": {
+        "A": "すべての刑事事件",
+        "B": "死刑・無期に当たる罪などの重大事件に限られる"
+      },
+      "answer": "B",
+      "explanation": "対象は死刑または無期の懲役・禁錮に当たる罪の事件や、故意の犯罪行為で被害者を死亡させた罪の事件など重大事件に限定される。刑事事件全部が対象になるわけではない。",
+      "memoryPoint": "対象＝死刑・無期相当などの重大刑事事件に限定。",
+      "trapPattern": "刑事事件であれば軽微な事件も対象になるとしてくる。",
+      "sourceExamId": "2025-q002",
+      "order": 4
+    },
+    {
+      "quizId": "basic-saibanin-system-005",
+      "topicId": "basic-saibanin-system",
+      "questionType": "AB",
+      "prompt": "法令の解釈や訴訟手続に関する判断は誰が行う？",
+      "choices": {
+        "A": "裁判員も加わって判断する",
+        "B": "裁判官のみで判断する"
+      },
+      "answer": "B",
+      "explanation": "法令の解釈と訴訟手続上の判断は裁判官の専権。裁判員が関与するのは事実認定・法令の適用・刑の量定である。裁判員の関与範囲を広げすぎる選択肢に注意。",
+      "memoryPoint": "法令解釈・手続判断＝裁判官のみ。裁判員は事実認定・法令適用・量刑。",
+      "trapPattern": "裁判員が法令の解釈にも関与できるとしてくる。",
+      "sourceExamId": "2025-q002",
+      "order": 5
+    },
+    {
+      "quizId": "basic-saibanin-system-006",
+      "topicId": "basic-saibanin-system",
+      "questionType": "AB",
+      "prompt": "裁判員は刑の量定（量刑）に関与する？",
+      "choices": {
+        "A": "関与する",
+        "B": "事実認定のみで量刑には関与しない"
+      },
+      "answer": "A",
+      "explanation": "裁判員は有罪・無罪の事実認定だけでなく、有罪の場合の量刑判断にも加わる。「事実認定のみ」と狭く限定するのがひっかけ。陪審制（事実認定のみ）との違いとして問われやすい。",
+      "memoryPoint": "裁判員は量刑にも関与する（陪審制との違い）。",
+      "trapPattern": "裁判員の役割を事実認定だけに限定してくる。",
+      "sourceExamId": "2025-q002",
+      "order": 6
+    },
+    {
+      "quizId": "basic-saibanin-system-007",
+      "topicId": "basic-saibanin-system",
+      "questionType": "AB",
+      "prompt": "被告人に不利な評決（有罪など）の要件は？",
+      "choices": {
+        "A": "合議体の単純過半数だけで足りる",
+        "B": "過半数で、かつ裁判官・裁判員の双方の意見を含むことが必要"
+      },
+      "answer": "B",
+      "explanation": "評決は合議体の員数の過半数の意見によるが、被告人に不利な判断には裁判官と裁判員それぞれ1人以上が賛成していなければならない。裁判員だけの多数では有罪にできない点が最重要ポイント。",
+      "memoryPoint": "評決＝過半数＋裁判官・裁判員双方の意見を含む。",
+      "trapPattern": "単純多数決だけで有罪にできる、と双方関与の要件を落としてくる。",
+      "sourceExamId": "2025-q002",
+      "order": 7
+    },
+    {
+      "quizId": "basic-saibanin-system-008",
+      "topicId": "basic-saibanin-system",
+      "questionType": "AB",
+      "prompt": "裁判員はどのように選ばれる？",
+      "choices": {
+        "A": "衆議院議員の選挙権を有する者の中からくじ等で選定される",
+        "B": "希望者の立候補制で選ばれる"
+      },
+      "answer": "A",
+      "explanation": "裁判員は衆議院議員の選挙権を有する者から作成された候補者名簿に基づき、くじ等の手続で選任される。立候補制ではなく、原則として辞退も法定事由がある場合に限られる。",
+      "memoryPoint": "選任＝衆院選の選挙権者からくじで選定（立候補制ではない）。",
+      "trapPattern": "立候補制・自由に辞退可能としてくる。",
+      "sourceExamId": "2025-q002",
+      "order": 8
+    }
+  ],
+  "review": {
+    "oneLineConclusion": "裁判員制度は重大刑事事件の地裁第一審に裁判官3人＋裁判員6人で臨み、評決には過半数かつ双方の意見が必要な制度である。",
+    "mustRemember": [
+      "対象は重大な刑事事件の地方裁判所第一審のみ（民事・控訴審は対象外）",
+      "原則の構成は裁判官3人＋裁判員6人",
+      "裁判員は事実認定・法令適用・量刑に関与し、法令解釈・手続判断は裁判官専権",
+      "被告人に不利な評決は過半数＋裁判官・裁判員双方の意見を含むことが必要",
+      "裁判員は衆議院議員の選挙権を有する者からくじ等で選任される"
+    ],
+    "commonMistakes": [
+      "民事事件や控訴審にも裁判員が参加すると考えてしまう",
+      "単純過半数だけで有罪評決ができると考えてしまう",
+      "裁判員の関与を事実認定だけに限定してしまう（量刑にも関与する）"
+    ],
+    "nextAction": "このJSONをクイズアプリに読み込み、ABテスト形式で復習する。"
+  }
+}

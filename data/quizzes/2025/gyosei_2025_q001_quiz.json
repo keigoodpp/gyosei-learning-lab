@@ -1,0 +1,147 @@
+{
+  "sourceExam": {
+    "examName": "行政書士試験",
+    "year": 2025,
+    "questionNo": 1,
+    "sourceUrl": "https://gyosyo.info/令和7年度2025年度｜行政書士試験の問題と解説/",
+    "sourceType": "past_exam_transformed",
+    "copyrightNote": "Original exam text is not reproduced. This file contains transformed issue-based learning quizzes.",
+    "needsReview": true,
+    "reviewNote": "問1のテーマ（法令用語「者・物・もの」の空欄補充）は予備校講評等の二次情報で確認した。掲載サイト本文は実行環境のネットワーク制限により直接確認できていないため、テーマの最終確認を要する。クイズ自体は法令用語の一般的知識に基づくオリジナル問題。"
+  },
+  "metadata": {
+    "subject": "基礎法学",
+    "field": "法令用語",
+    "mainTopic": "法令用語「者」「物」「もの」の使い分け",
+    "importance": "B",
+    "difficulty": "standard",
+    "estimatedStudyMinutes": 10
+  },
+  "topics": [
+    {
+      "topicId": "basic-legal-terms-mono",
+      "topicName": "法令用語「者」「物」「もの」の使い分け",
+      "rank": "B",
+      "summary": "法令では、権利義務の主体（自然人・法人）を「者」、権利の客体となる有体物を「物」、そのどちらにも当たらないもの（法人格のない団体・無体物など）や直前の語句を限定する場合に「もの」を使う。",
+      "memoryPoint": "主体は「者」、有体物は「物」、それ以外と絞り込みは「もの」。",
+      "trapPatterns": [
+        "「者」は自然人だけを指すと限定する",
+        "「物」に権利や情報などの無体物を含めてしまう",
+        "法人格のない社団を「者」と表記できるとする"
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "quizId": "basic-legal-terms-mono-001",
+      "topicId": "basic-legal-terms-mono",
+      "questionType": "AB",
+      "prompt": "法令用語の「者」が指すのは？",
+      "choices": {
+        "A": "自然人のみ",
+        "B": "自然人と法人（法律上の人格をもつ主体）"
+      },
+      "answer": "B",
+      "explanation": "「者」は権利義務の主体となり得る存在、つまり自然人と法人の双方を指す。「自然人のみ」と限定するのが典型的なひっかけで、法人も「者」に含まれる点を押さえる。",
+      "memoryPoint": "「者」＝自然人＋法人（法的人格のある主体）。",
+      "trapPattern": "「者」は個人（自然人）だけを指すと限定してくる。",
+      "sourceExamId": "2025-q001",
+      "order": 1
+    },
+    {
+      "quizId": "basic-legal-terms-mono-002",
+      "topicId": "basic-legal-terms-mono",
+      "questionType": "AB",
+      "prompt": "法人格のない社団・財団を法令で指すときに使うのは？",
+      "choices": {
+        "A": "ひらがなの「もの」",
+        "B": "漢字の「者」"
+      },
+      "answer": "A",
+      "explanation": "「者」は法的人格のある主体に使うため、法人格のない社団・財団には使えず、ひらがなの「もの」で受ける。人格の有無で「者」と「もの」を使い分けるのが核心。",
+      "memoryPoint": "法人格がなければ「者」ではなく「もの」。",
+      "trapPattern": "権利能力なき社団も「者」と表記できるとしてくる。",
+      "sourceExamId": "2025-q001",
+      "order": 2
+    },
+    {
+      "quizId": "basic-legal-terms-mono-003",
+      "topicId": "basic-legal-terms-mono",
+      "questionType": "AB",
+      "prompt": "民法上の「物」とは？",
+      "choices": {
+        "A": "有体物に限られない",
+        "B": "有体物をいう（民法85条）"
+      },
+      "answer": "B",
+      "explanation": "民法85条は「この法律において『物』とは、有体物をいう」と定める。情報・権利・エネルギーのような無体のものは民法上の「物」に当たらないのが原則。「物」の範囲を無限定に広げる選択肢に注意。",
+      "memoryPoint": "民法85条：「物」＝有体物。",
+      "trapPattern": "権利や情報も「物」に含まれるとしてくる。",
+      "sourceExamId": "2025-q001",
+      "order": 3
+    },
+    {
+      "quizId": "basic-legal-terms-mono-004",
+      "topicId": "basic-legal-terms-mono",
+      "questionType": "AB",
+      "prompt": "「〜であって、…するもの」という条文の「もの」の働きは？",
+      "choices": {
+        "A": "直前の語句に限定（絞り込み）を加える",
+        "B": "新しい主体を付け加える"
+      },
+      "answer": "A",
+      "explanation": "「〜であって、…するもの」の「もの」は英語の関係代名詞のように、前に出てきた語句をさらに絞り込む役割を果たす。新たな対象を追加するわけではない点がひっかけポイント。",
+      "memoryPoint": "「〜であって…もの」＝前の語句を絞り込む関係代名詞的用法。",
+      "trapPattern": "限定の「もの」を、別の対象を追加する語と読ませてくる。",
+      "sourceExamId": "2025-q001",
+      "order": 4
+    },
+    {
+      "quizId": "basic-legal-terms-mono-005",
+      "topicId": "basic-legal-terms-mono",
+      "questionType": "AB",
+      "prompt": "権利やノウハウのような無体のものを条文で受けるのは？",
+      "choices": {
+        "A": "「物」",
+        "B": "「もの」"
+      },
+      "answer": "B",
+      "explanation": "「物」は有体物を指すので、権利・情報・ノウハウのような無体のものは「もの」で受ける。「者」にも「物」にも当たらない対象の受け皿が「もの」だと整理すると覚えやすい。",
+      "memoryPoint": "無体のもの・抽象的な対象は「もの」で受ける。",
+      "trapPattern": "無体物にも漢字の「物」を使えるとしてくる。",
+      "sourceExamId": "2025-q001",
+      "order": 5
+    },
+    {
+      "quizId": "basic-legal-terms-mono-006",
+      "topicId": "basic-legal-terms-mono",
+      "questionType": "AB",
+      "prompt": "「者」を使えるのはどんな存在？",
+      "choices": {
+        "A": "権利義務の主体となり得る存在",
+        "B": "主体でなくても広く使える"
+      },
+      "answer": "A",
+      "explanation": "「者」は権利義務の主体（自然人・法人）に限って使う用語。主体性のないものに「者」は使わない。「者・物・もの」の判別は、①主体か、②有体物か、③それ以外か、の順で考えると速い。",
+      "memoryPoint": "判別手順：主体→「者」、有体物→「物」、それ以外→「もの」。",
+      "trapPattern": "主体性のない対象にも「者」を使えるとしてくる。",
+      "sourceExamId": "2025-q001",
+      "order": 6
+    }
+  ],
+  "review": {
+    "oneLineConclusion": "法令用語は、主体＝「者」・有体物＝「物」・それ以外＋絞り込み＝「もの」で判別する。",
+    "mustRemember": [
+      "「者」は自然人と法人の双方を含む（法的人格のある主体）",
+      "民法85条により「物」とは有体物をいう",
+      "法人格のない社団・無体物は「もの」で受ける",
+      "「〜であって、…するもの」の「もの」は直前の語句を限定する用法"
+    ],
+    "commonMistakes": [
+      "「者」を自然人だけに限定してしまう",
+      "権利・情報など無体のものを「物」と考えてしまう",
+      "限定用法の「もの」を対象追加の語と誤読する"
+    ],
+    "nextAction": "このJSONをクイズアプリに読み込み、ABテスト形式で復習する。"
+  }
+}

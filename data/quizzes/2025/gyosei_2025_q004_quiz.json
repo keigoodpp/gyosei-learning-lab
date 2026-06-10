@@ -1,0 +1,225 @@
+{
+  "sourceExam": {
+    "examName": "行政書士試験",
+    "year": 2025,
+    "questionNo": 4,
+    "sourceUrl": "https://gyosyo.info/令和7年度2025年度｜行政書士試験の問題と解説/",
+    "sourceType": "past_exam_transformed",
+    "copyrightNote": "Original exam text is not reproduced. This file contains transformed issue-based learning quizzes."
+  },
+  "metadata": {
+    "subject": "憲法",
+    "field": "人権（表現の自由）",
+    "mainTopic": "取材・報道の自由と主要判例",
+    "importance": "A",
+    "difficulty": "standard",
+    "estimatedStudyMinutes": 12
+  },
+  "topics": [
+    {
+      "topicId": "constitution-press-freedom",
+      "topicName": "報道・取材の自由の位置づけ（博多駅事件）",
+      "rank": "A",
+      "summary": "博多駅事件（最大決昭44.11.26）は、報道の自由は21条の保障のもとにあるとする一方、取材の自由は「21条の精神に照らし、十分尊重に値する」と判示した。公正な刑事裁判の実現のためには取材の自由がある程度の制約を受けてもやむを得ず、フィルム提出命令の可否は諸利益の比較衡量で決まる。",
+      "memoryPoint": "報道の自由＝保障／取材の自由＝十分尊重に値する（直接保障とは言わない）。",
+      "trapPatterns": [
+        "取材の自由も21条で直接保障されるとする",
+        "取材の自由は一切制約を受けないとする"
+      ]
+    },
+    {
+      "topicId": "constitution-news-gathering-limits",
+      "topicName": "取材活動の限界（外務省機密漏洩事件）",
+      "rank": "A",
+      "summary": "外務省機密漏洩（西山記者）事件（最決昭53.5.31）は、真に報道目的で手段・方法が相当であれば取材は正当業務行為となり得るが、取材手段が一般の刑罰法令に触れなくても、取材対象者の人格の尊厳を著しく蹂躙するなど社会観念上是認できない態様の場合は正当な取材活動の範囲を逸脱するとした。",
+      "memoryPoint": "刑罰法令に触れなくても、人格の尊厳を蹂躙する取材は違法。",
+      "trapPatterns": [
+        "刑罰法令に触れなければ取材手段は常に正当とする",
+        "公務員への取材の働きかけは一切違法とする"
+      ]
+    },
+    {
+      "topicId": "constitution-right-of-reply",
+      "topicName": "反論権（サンケイ新聞事件）",
+      "rank": "A",
+      "summary": "サンケイ新聞反論文掲載請求事件（最判昭62.4.24）は、不法行為の成立を前提としない反論文掲載請求権は、批判的記事の掲載をちゅうちょさせ表現の自由を間接的に侵す危険があるため、具体的な成文法の根拠がない限り認められないとした。",
+      "memoryPoint": "反論権は成文法の根拠がなければ認められない。",
+      "trapPatterns": [
+        "21条から直接に反論文掲載請求権が導けるとする",
+        "不法行為の成立がなくても掲載請求が当然に認められるとする"
+      ]
+    },
+    {
+      "topicId": "constitution-news-source-privilege",
+      "topicName": "取材源の秘匿（NHK記者証言拒絶事件）",
+      "rank": "B",
+      "summary": "NHK記者証言拒絶事件（最決平18.10.3）は、民事訴訟において報道関係者の取材源は原則として職業の秘密（民訴法197条1項3号）に当たり、保護に値する場合には証言を拒絶できるとした。",
+      "memoryPoint": "民事訴訟では取材源は原則「職業の秘密」として証言拒絶できる。",
+      "trapPatterns": [
+        "取材源についていかなる場合も証言拒絶できないとする"
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "quizId": "constitution-press-freedom-001",
+      "topicId": "constitution-press-freedom",
+      "questionType": "AB",
+      "prompt": "判例による「報道の自由」の位置づけは？",
+      "choices": {
+        "A": "憲法21条の保障のもとにある",
+        "B": "21条の保障外で、尊重されるにとどまる"
+      },
+      "answer": "A",
+      "explanation": "博多駅事件は、事実の報道の自由は国民の知る権利に奉仕するものとして、表現の自由を定めた21条の保障のもとにあると明言した。「尊重に値する」にとどまるのは取材の自由のほうで、両者の言い回しの違いが最大のひっかけ。",
+      "memoryPoint": "報道の自由＝21条の保障のもとにある。",
+      "trapPattern": "報道の自由と取材の自由の判示の言い回しを入れ替えてくる。",
+      "sourceExamId": "2025-q004",
+      "order": 1
+    },
+    {
+      "quizId": "constitution-press-freedom-002",
+      "topicId": "constitution-press-freedom",
+      "questionType": "AB",
+      "prompt": "判例による「取材の自由」の位置づけは？",
+      "choices": {
+        "A": "21条で直接保障される",
+        "B": "21条の精神に照らし、十分尊重に値する"
+      },
+      "answer": "B",
+      "explanation": "博多駅事件は取材の自由について「21条の精神に照らし、十分尊重に値する」と述べるにとどめ、保障されるとは言っていない。「直接保障」と書かれていたら誤りと判断できるのが試験的な急所。",
+      "memoryPoint": "取材の自由＝「十分尊重に値する」止まり（保障とは言わない）。",
+      "trapPattern": "取材の自由も21条で保障されると言い切ってくる。",
+      "sourceExamId": "2025-q004",
+      "order": 2
+    },
+    {
+      "quizId": "constitution-press-freedom-003",
+      "topicId": "constitution-press-freedom",
+      "questionType": "AB",
+      "prompt": "公正な刑事裁判の実現のために、取材の自由は？",
+      "choices": {
+        "A": "一切制約されない",
+        "B": "ある程度の制約を受けてもやむを得ない"
+      },
+      "answer": "B",
+      "explanation": "博多駅事件は、公正な刑事裁判の実現という憲法上の要請のためには、取材の自由がある程度の制約をこうむることもやむを得ないとした。取材の自由を絶対視する選択肢は誤り。",
+      "memoryPoint": "公正な刑事裁判のためなら取材の自由も制約され得る。",
+      "trapPattern": "取材の自由は他の利益に常に優先するとしてくる。",
+      "sourceExamId": "2025-q004",
+      "order": 3
+    },
+    {
+      "quizId": "constitution-press-freedom-004",
+      "topicId": "constitution-press-freedom",
+      "questionType": "AB",
+      "prompt": "取材フィルムの提出命令が許されるかの判断方法は？",
+      "choices": {
+        "A": "審判対象の犯罪の性質や報道機関の不利益など諸利益の比較衡量",
+        "B": "刑事裁判の必要があれば形式的に常に許される"
+      },
+      "answer": "A",
+      "explanation": "博多駅事件は、犯罪の性質・態様・軽重、証拠としての価値、報道機関が受ける不利益の程度などを比較衡量して提出命令の可否を決すべきとした。必要性だけで機械的に認める枠組みではない。",
+      "memoryPoint": "提出命令の可否＝個別の比較衡量で判断。",
+      "trapPattern": "裁判の必要さえあれば無条件に提出命令できるとしてくる。",
+      "sourceExamId": "2025-q004",
+      "order": 4
+    },
+    {
+      "quizId": "constitution-news-gathering-limits-001",
+      "topicId": "constitution-news-gathering-limits",
+      "questionType": "AB",
+      "prompt": "取材手段が一般の刑罰法令に触れなければ、取材活動は常に正当？",
+      "choices": {
+        "A": "正当とは限らない（人格の尊厳を著しく蹂躙する態様は範囲を逸脱）",
+        "B": "刑罰法令に触れない限り常に正当"
+      },
+      "answer": "A",
+      "explanation": "外務省機密漏洩事件は、取材手段が刑罰法令に触れなくても、取材対象者の人格の尊厳を著しく蹂躙するなど法秩序全体の精神に照らし社会観念上是認できない態様であれば、正当な取材活動の範囲を逸脱するとした。「刑罰法令に触れない＝適法」と短絡させる選択肢が誤り。",
+      "memoryPoint": "違法かどうかは刑罰法令だけでなく態様の社会的相当性でも判断。",
+      "trapPattern": "「刑罰法令に触れなければ常に正当な取材」と言い切ってくる。",
+      "sourceExamId": "2025-q004",
+      "order": 5
+    },
+    {
+      "quizId": "constitution-news-gathering-limits-002",
+      "topicId": "constitution-news-gathering-limits",
+      "questionType": "AB",
+      "prompt": "公務員に秘密漏示をそそのかす取材は？",
+      "choices": {
+        "A": "いかなる場合も正当化されない",
+        "B": "真に報道目的で手段・方法が相当なら正当業務行為となり得る"
+      },
+      "answer": "B",
+      "explanation": "同事件は、報道機関が公務員に根気強く説得や要請を続けることは、真に報道目的に出たもので手段・方法が相当であれば正当な業務行為となり得るとした。取材の働きかけを一律違法とする選択肢は誤り。",
+      "memoryPoint": "報道目的＋相当な手段なら、公務員への説得・要請も正当業務になり得る。",
+      "trapPattern": "公務員への取材の働きかけを全面的に違法としてくる。",
+      "sourceExamId": "2025-q004",
+      "order": 6
+    },
+    {
+      "quizId": "constitution-right-of-reply-001",
+      "topicId": "constitution-right-of-reply",
+      "questionType": "AB",
+      "prompt": "不法行為の成立を前提とせずに、新聞社へ反論文の掲載を請求できる？",
+      "choices": {
+        "A": "21条を根拠に当然請求できる",
+        "B": "具体的な成文法の根拠がない限り請求できない"
+      },
+      "answer": "B",
+      "explanation": "サンケイ新聞事件は、不法行為が成立しない場合に反論文掲載請求権を認める成文法はなく、21条から直接導くこともできないとした。私人間の問題に憲法の規定を直接適用しない姿勢も背景にある。",
+      "memoryPoint": "反論権＝成文法の根拠がなければ認められない。",
+      "trapPattern": "21条から直接、反論文掲載請求権が導けるとしてくる。",
+      "sourceExamId": "2025-q004",
+      "order": 7
+    },
+    {
+      "quizId": "constitution-right-of-reply-002",
+      "topicId": "constitution-right-of-reply",
+      "questionType": "AB",
+      "prompt": "判例が反論権制度に慎重な理由は？",
+      "choices": {
+        "A": "批判的記事の掲載をちゅうちょさせ、表現の自由を間接的に侵す危険があるから",
+        "B": "反論文の掲載が検閲に該当するから"
+      },
+      "answer": "A",
+      "explanation": "判例は、反論権制度を認めると新聞社が批判的記事、特に公的事項に関する記事の掲載をためらい、表現の自由が間接的に侵される危険につながるおそれを理由に挙げた。「検閲だから」という理由づけは判例にはない。",
+      "memoryPoint": "反論権の危険＝批判的記事の萎縮→表現の自由の間接的侵害。",
+      "trapPattern": "判例の理由づけを検閲（21条2項）の問題にすり替えてくる。",
+      "sourceExamId": "2025-q004",
+      "order": 8
+    },
+    {
+      "quizId": "constitution-news-source-privilege-001",
+      "topicId": "constitution-news-source-privilege",
+      "questionType": "AB",
+      "prompt": "民事訴訟で報道記者は取材源についての証言を拒める？",
+      "choices": {
+        "A": "原則として「職業の秘密」に当たり拒絶できる",
+        "B": "いかなる場合も拒絶できない"
+      },
+      "answer": "A",
+      "explanation": "NHK記者証言拒絶事件（最決平18.10.3）は、取材源の秘密は原則として民訴法上の職業の秘密に当たり、保護に値する秘密であれば証言拒絶が認められるとした。刑事と民事で扱いが異なり得る点にも注意。",
+      "memoryPoint": "民事訴訟の取材源＝原則、職業の秘密として証言拒絶可。",
+      "trapPattern": "取材源の証言拒絶は一切認められないとしてくる。",
+      "sourceExamId": "2025-q004",
+      "order": 9
+    }
+  ],
+  "review": {
+    "oneLineConclusion": "報道の自由は21条で保障されるが、取材の自由は「十分尊重」にとどまり、公正な刑事裁判などとの比較衡量で制約され得る。",
+    "mustRemember": [
+      "報道の自由＝21条の保障／取材の自由＝21条の精神に照らし十分尊重（言い回しの違いが急所）",
+      "公正な刑事裁判の実現のため取材の自由はある程度制約され得る（博多駅事件・比較衡量）",
+      "刑罰法令に触れない取材でも、人格の尊厳を蹂躙する態様なら違法（西山記者事件）",
+      "成文法の根拠なき反論文掲載請求権は認められない（サンケイ新聞事件）",
+      "民事訴訟では取材源は原則として職業の秘密として証言拒絶できる（NHK記者事件）"
+    ],
+    "commonMistakes": [
+      "報道の自由と取材の自由の判示の言い回しを混同する",
+      "「刑罰法令に触れなければ取材は常に適法」と短絡する",
+      "反論権を21条から直接導けると考える"
+    ],
+    "nextAction": "このJSONをクイズアプリに読み込み、ABテスト形式で復習する。"
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "sourceExam": {
+    "examName": "行政書士試験",
+    "year": 2025,
+    "questionNo": 3,
+    "sourceUrl": "https://gyosyo.info/令和7年・2025｜問3｜/",
+    "sourceType": "past_exam_transformed",
+    "copyrightNote": "Original exam text is not reproduced. This file contains transformed issue-based learning quizzes."
+  },
+  "metadata": {
+    "subject": "憲法",
+    "field": "人権（平等権）",
+    "mainTopic": "法の下の平等（憲法14条）と主要判例",
+    "importance": "A",
+    "difficulty": "standard",
+    "estimatedStudyMinutes": 12
+  },
+  "topics": [
+    {
+      "topicId": "constitution-equality-principle",
+      "topicName": "法の下の平等の基本枠組み",
+      "rank": "A",
+      "summary": "憲法14条1項の平等は、合理的な区別を許す相対的平等であり、人種・信条・性別・社会的身分・門地の列挙は例示にすぎない。区別の合憲性は事柄の性質に応じた合理性の有無で判断される。",
+      "memoryPoint": "14条＝相対的平等、列挙事由は例示列挙。",
+      "trapPatterns": [
+        "列挙事由を限定列挙と説明する",
+        "列挙事由に当たる区別は常に違憲とする"
+      ]
+    },
+    {
+      "topicId": "constitution-sonzokusatsu-case",
+      "topicName": "尊属殺重罰規定違憲判決（最大判昭48.4.4）",
+      "rank": "A",
+      "summary": "尊属殺の重罰規定について、立法目的（尊属尊重の道義）は合理性を否定できないが、法定刑を死刑・無期に限る加重の程度が極端で、目的達成の手段として著しく不合理だとして14条1項違反とした。",
+      "memoryPoint": "尊属殺＝目的は不合理といえないが、刑の加重の程度（手段）が極端で違憲。",
+      "trapPatterns": [
+        "立法目的自体が違憲とされたとする",
+        "社会的身分による差別として厳格な基準で審査したとする"
+      ]
+    },
+    {
+      "topicId": "constitution-salaryman-tax-case",
+      "topicName": "サラリーマン税金訴訟（最大判昭60.3.27）",
+      "rank": "A",
+      "summary": "租税法の定立は立法府の専門技術的・政策的判断に委ねられるため、給与所得者と事業所得者の取扱いの区別は、目的が正当で区別の態様が著しく不合理でない限り14条1項に違反しないとした。",
+      "memoryPoint": "租税立法の区別＝立法裁量を尊重した緩やかな審査。",
+      "trapPatterns": [
+        "緩やかな審査の理由を「列挙事由に当たらないから」とすり替える",
+        "租税立法にも厳格な審査基準を適用するとする"
+      ]
+    },
+    {
+      "topicId": "constitution-remarriage-ban-case",
+      "topicName": "再婚禁止期間違憲判決（最大判平27.12.16）",
+      "rank": "A",
+      "summary": "女性にのみ6か月の再婚禁止期間を定めた旧民法733条について、父性推定の重複回避に必要な100日を超える部分は合理性を欠き、14条1項・24条2項に違反するとした。",
+      "memoryPoint": "再婚禁止期間＝100日を超える部分のみ違憲。",
+      "trapPatterns": [
+        "6か月の禁止期間全体が違憲とされたとする",
+        "性別による区別だから厳格な基準で審査すると判示したとする"
+      ]
+    },
+    {
+      "topicId": "constitution-illegitimate-child-case",
+      "topicName": "嫡出でない子の相続分差別違憲決定（最大決平25.9.4）",
+      "rank": "A",
+      "summary": "嫡出でない子の法定相続分を嫡出子の2分の1とする旧民法900条4号ただし書について、子が自ら選択・修正できない事柄を理由に不利益を及ぼすことは許されないとして14条1項違反とした。",
+      "memoryPoint": "嫡出子相続分差別＝平成25年に違憲（子に選択の余地がない事情）。",
+      "trapPatterns": [
+        "現在も合憲判例が維持されているとする"
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "quizId": "constitution-equality-principle-001",
+      "topicId": "constitution-equality-principle",
+      "questionType": "AB",
+      "prompt": "14条1項の「人種・信条・性別・社会的身分・門地」の列挙は？",
+      "choices": {
+        "A": "限定列挙（これ以外の区別は14条の問題にならない）",
+        "B": "例示列挙（列挙事由以外の区別にも14条が及ぶ）"
+      },
+      "answer": "B",
+      "explanation": "判例・通説は列挙事由を例示と解しており、年齢や職業による区別など列挙されていない事由の区別にも14条1項は適用される。「列挙事由に当たらないから14条の問題にならない」という論法は誤り。",
+      "memoryPoint": "14条の列挙事由は例示列挙。",
+      "trapPattern": "列挙事由を限定列挙とし、それ以外の区別を14条の枠外としてくる。",
+      "sourceExamId": "2025-q003",
+      "order": 1
+    },
+    {
+      "quizId": "constitution-equality-principle-002",
+      "topicId": "constitution-equality-principle",
+      "questionType": "AB",
+      "prompt": "14条の保障する平等の意味は？",
+      "choices": {
+        "A": "一切の区別を許さない絶対的平等",
+        "B": "合理的な区別は許される相対的平等"
+      },
+      "answer": "B",
+      "explanation": "判例は、事柄の性質に即応した合理的な区別は14条に反しないとする（相対的平等）。累進課税や女性の産前産後休業のような合理的区別は合憲。「いかなる区別も違憲」とする選択肢は誤り。",
+      "memoryPoint": "平等＝合理的区別を許す相対的平等。",
+      "trapPattern": "合理的な区別まで違憲になる絶対的平等として出題してくる。",
+      "sourceExamId": "2025-q003",
+      "order": 2
+    },
+    {
+      "quizId": "constitution-equality-principle-003",
+      "topicId": "constitution-equality-principle",
+      "questionType": "AB",
+      "prompt": "「列挙事由に当たる区別は常に違憲」という説明は？",
+      "choices": {
+        "A": "誤り（合理性の有無で個別に判断される）",
+        "B": "正しい"
+      },
+      "answer": "A",
+      "explanation": "列挙事由に当たる区別でも、合理的な根拠があれば合憲となり得る。判例は列挙事由か否かで一律に結論を決めず、区別の目的と態様の合理性を個別に審査する。",
+      "memoryPoint": "列挙事由該当＝即違憲ではない。合理性で判断。",
+      "trapPattern": "「性別による区別だから当然に違憲」など機械的な結論を出してくる。",
+      "sourceExamId": "2025-q003",
+      "order": 3
+    },
+    {
+      "quizId": "constitution-sonzokusatsu-case-001",
+      "topicId": "constitution-sonzokusatsu-case",
+      "questionType": "AB",
+      "prompt": "尊属殺重罰規定違憲判決で違憲とされたのは？",
+      "choices": {
+        "A": "尊属尊重という立法目的そのもの",
+        "B": "法定刑を死刑・無期に限った加重の程度（手段）"
+      },
+      "answer": "B",
+      "explanation": "最大判昭48.4.4は、立法目的の合理性は否定できないとしつつ、法定刑が死刑・無期に限られ執行猶予すら困難な点で加重の程度が極端であり、手段が著しく不合理として違憲とした。目的違憲と手段違憲の取り違えが定番のひっかけ。",
+      "memoryPoint": "尊属殺＝目的は否定せず、手段（刑の加重の程度）が違憲。",
+      "trapPattern": "立法目的自体が不合理とされた、と目的と手段をすり替えてくる。",
+      "sourceExamId": "2025-q003",
+      "order": 4
+    },
+    {
+      "quizId": "constitution-sonzokusatsu-case-002",
+      "topicId": "constitution-sonzokusatsu-case",
+      "questionType": "AB",
+      "prompt": "判例は尊属殺の重罰規定を「社会的身分による差別だから厳格に審査する」としたか？",
+      "choices": {
+        "A": "そのような審査基準は採っていない",
+        "B": "社会的身分差別として厳格審査を宣言した"
+      },
+      "answer": "A",
+      "explanation": "判例は「社会的身分による差別＝厳格審査」という枠組みを示したわけではなく、立法目的と手段の合理性を検討して違憲と結論づけた。学説的な審査基準論を判例の判示であるかのように装う選択肢に注意。",
+      "memoryPoint": "判例は厳格審査基準を明示していない。合理性の検討で違憲とした。",
+      "trapPattern": "学説上の厳格審査基準を判例が採用したかのように書いてくる。",
+      "sourceExamId": "2025-q003",
+      "order": 5
+    },
+    {
+      "quizId": "constitution-salaryman-tax-case-001",
+      "topicId": "constitution-salaryman-tax-case",
+      "questionType": "AB",
+      "prompt": "給与所得者と事業所得者の税法上の取扱いの違いについて、判例の審査態度は？",
+      "choices": {
+        "A": "立法府の裁量を尊重して緩やかに審査する",
+        "B": "平等が問題になるため厳格に審査する"
+      },
+      "answer": "A",
+      "explanation": "サラリーマン税金訴訟（最大判昭60.3.27）は、租税法の定立は立法府の政策的・技術的判断に委ねられるとして、目的が正当で区別の態様が著しく不合理でない限り合憲とする緩やかな審査を行った。",
+      "memoryPoint": "租税立法の区別＝著しく不合理でない限り合憲。",
+      "trapPattern": "租税立法にも厳格な審査が必要としてくる。",
+      "sourceExamId": "2025-q003",
+      "order": 6
+    },
+    {
+      "quizId": "constitution-salaryman-tax-case-002",
+      "topicId": "constitution-salaryman-tax-case",
+      "questionType": "AB",
+      "prompt": "租税立法に広い立法裁量が認められる理由として判例が挙げたのは？",
+      "choices": {
+        "A": "14条1項の列挙事由による差別に当たらないから",
+        "B": "租税法の定立が専門技術的・政策的判断を要するから"
+      },
+      "answer": "B",
+      "explanation": "判例が裁量を広く認めた理由は、租税法の定立に財政・経済・社会政策等の専門技術的判断が必要だから。「列挙事由に該当しないから裁量が広い」という理由づけは判例の論理ではなく、ひっかけの定番。",
+      "memoryPoint": "裁量が広い理由＝租税立法の専門技術性・政策性（列挙事由非該当ではない）。",
+      "trapPattern": "「列挙事由に当たらない差別だから緩やかに審査」と理由をすり替えてくる。",
+      "sourceExamId": "2025-q003",
+      "order": 7
+    },
+    {
+      "quizId": "constitution-remarriage-ban-case-001",
+      "topicId": "constitution-remarriage-ban-case",
+      "questionType": "AB",
+      "prompt": "再婚禁止期間違憲判決で違憲とされた範囲は？",
+      "choices": {
+        "A": "6か月の禁止期間の全部",
+        "B": "100日を超える部分のみ"
+      },
+      "answer": "B",
+      "explanation": "最大判平27.12.16は、父性推定の重複を避けるために必要な100日の部分は合理性を認め、それを超える部分のみを14条1項・24条2項違反とした。「全部違憲」と範囲を広げるのが典型的なひっかけ。",
+      "memoryPoint": "再婚禁止期間＝100日超の部分のみ違憲（100日以内は合理性あり）。",
+      "trapPattern": "禁止期間の全体が違憲とされたとしてくる。",
+      "sourceExamId": "2025-q003",
+      "order": 8
+    },
+    {
+      "quizId": "constitution-illegitimate-child-case-001",
+      "topicId": "constitution-illegitimate-child-case",
+      "questionType": "AB",
+      "prompt": "嫡出でない子の相続分を2分の1とする規定について平成25年大法廷決定は？",
+      "choices": {
+        "A": "違憲とした（子に選択の余地のない事情による不利益は許されない）",
+        "B": "従来どおり合憲を維持した"
+      },
+      "answer": "A",
+      "explanation": "最大決平25.9.4は、家族形態の多様化等の事情の変化を踏まえ、子が自ら選択できない出生の事情を理由に不利益を及ぼすことは許されないとして違憲とした。平成7年の合憲判断からの変更である点も問われやすい。",
+      "memoryPoint": "嫡出子相続分差別＝平成25年に違憲（平成7年合憲から変更）。",
+      "trapPattern": "古い合憲判例（平成7年）が現在も維持されているとしてくる。",
+      "sourceExamId": "2025-q003",
+      "order": 9
+    }
+  ],
+  "review": {
+    "oneLineConclusion": "14条は例示列挙・相対的平等であり、判例は事案ごとに区別の目的と手段の合理性を審査して結論を出している。",
+    "mustRemember": [
+      "14条1項の列挙事由は例示列挙、平等は相対的平等",
+      "尊属殺違憲判決は目的ではなく刑の加重の程度（手段）を違憲とした",
+      "租税立法の区別は専門技術性を理由に緩やかに審査される（サラリーマン税金訴訟）",
+      "再婚禁止期間は100日を超える部分のみ違憲",
+      "嫡出でない子の相続分差別は平成25年に違憲とされた"
+    ],
+    "commonMistakes": [
+      "尊属殺判決の目的違憲と手段違憲を取り違える",
+      "租税立法の広い裁量の理由を「列挙事由に当たらないから」とすり替えられて気づかない",
+      "再婚禁止期間を全部違憲と覚えてしまう",
+      "判例が学説の厳格審査基準をそのまま採用したと誤解する"
+    ],
+    "nextAction": "このJSONをクイズアプリに読み込み、ABテスト形式で復習する。"
+  }
+}
